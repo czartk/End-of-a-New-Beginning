@@ -14,8 +14,13 @@ state = {
 			cotton_farm=1
 		}
 		victory_points = {
-			11659 1
+			11659 5
 		}
+		 
+                victory_points = {
+			679 1
+		}
+
 		add_core_of = AUS
 	}
 
