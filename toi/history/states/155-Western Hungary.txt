@@ -17,6 +17,10 @@ state={
 		victory_points = {
 			3670 3
 		}
+		victory_points = {
+			6720 5		
+	        }
+
 		buildings = {
 			infrastructure = 4
 			cotton_farm=1
