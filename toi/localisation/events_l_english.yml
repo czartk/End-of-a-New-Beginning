@@ -955,6 +955,11 @@
  news.14.t:0 "[PRS.GetNameDef] opens the \"Kiel Canal\"!"
  news.14.d:0 "After years of construction, the industrious [PRS.GetAdjective] people have managed to construct the most recent grand achievement of mankind in the realm of construction: A canal cutting through Schleswig, connecting the Baltic and the North Sea. It remains to be seen how exactly the canal will be used, but it is expected this will significantly weaken the strategic effect the Danish Belts currently have on trade and fleet movement in the region."
  news.14.a:0 "This will bring lots of new possibilities..."
+ news.15.t:0 "Franco-Swedish Military Exercises"
+ news.15.d:0 "Throughout the last three weeks, French and Swedish units have been conducting military exercises in the forests of Dalecarlia. \n\n13,700 men from 10 Regiments and 3 independent Battalions participated in the exercises, which ranged from small marksman competitions to massive mock battles with thousands of infantry, cavalry, and artillery, participating. \n\nThe Exercise is reportedly considered a complete success, and the Swedish Minister for War has said that the event has taught the Swedish Army many valuable lessons"
+ news.15.a:0 "Interesting."
+ news.15.b:0 "This has been an invaluable experience"
+ news.15.c:0 "We sure taught them a thing or two about fighting!"
  
  #Generic
  generic.1.t:0 "An African Tribe"

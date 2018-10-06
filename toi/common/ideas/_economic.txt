@@ -257,6 +257,41 @@ ideas = {
 	trade_laws = { 
 		law = yes
 
+		gripenstedt_free_trade = {
+			
+			allowed = {
+				TAG = SWE
+			}
+			
+			available = {
+				has_completed_focus = SWE_accept_capitalism_CON
+				NOT = { has_war = yes }
+				OR = {
+					has_stability > 0.5
+				}
+				OR = {
+					has_completed_focus = SWE_economic_reform_final
+				}				
+			}
+			
+			cost = 450
+			removal_cost = -1
+			
+			modifier = {
+				min_export = 0.5
+				improve_relations_maintain_cost_factor = -0.75
+				opinion_gain_monthly_same_ideology_factor = 0.75
+				opinion_gain_monthly_factor = 0.35
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_time_factor = -0.05
+				centrism_drift = 0.05				
+			}
+			
+			cancel_if_invalid = yes
+		}
+						
 		free_trade = {
 			
 			available = {

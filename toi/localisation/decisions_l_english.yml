@@ -381,8 +381,19 @@
  
  #Swedish Decisions
  swedish_politics_category:0 "Address the Political Issues"
- municipal_reforms:0 "Reform the Municipalities"
- municipal_reforms_desc:0 "The Municipal System has remained largely unchanged for three centuries now, it's about time we sit down and have a serious discussion about what to do going forward."
+ swedish_military_category:0 "The Royal Swedish Army"
+ SWE_municipal_reforms:0 "Reform the Municipalities"
+ SWE_municipal_reforms_desc:0 "The Municipal System has remained largely unchanged for three centuries now, it's about time we sit down and have a serious discussion about what to do going forward."
+ SWE_army_reform_rexamine:0 "Rexamine our Doctrines"
+ SWE_army_reform_rexamine_desc:0 "The Swedish Military Doctrine has remained largely unchanged for a worryingly long time, and our Army is still stuck in the Napoleonic Area. The lack of modern theory within the Army is an issue that won't just sort itself out if we give it enough time; This requires direct intervention to be alleviated"
+ SWE_army_reform_abroad:0 "Send Officers Abroad"
+ SWE_army_reform_abroad_desc:0 "The Swedish Military Doctrine has remained largely unchanged for a worryingly long time, and our Army is still stuck in the Napoleonic Area. The lack of modern theory within the Army is an issue that won't just sort itself out if we give it enough time; This requires direct intervention to be alleviated"
+ SWE_army_reform_encourage:0 "Encourage Officers to challenge the Status Quo"
+ SWE_army_reform_encourage_desc:0 "The Swedish Military Doctrine has remained largely unchanged for a worryingly long time, and our Army is still stuck in the Napoleonic Area. The lack of modern theory within the Army is an issue that won't just sort itself out if we give it enough time; This requires direct intervention to be alleviated"
+ SWE_form_sami_regiments:0 "Form a Sami Regiment"
+ SWE_form_sami_regiments_desc:0 "Samis, often referred to as Lapps, are the indingenous people of Northern Sweden. Raised in the harsh winter snows and unforgiving cold of the Tundra, they are experts in survival, and are renowned for their ruggedness and independence. Our motherland has a long history of discrimination against the Samis, but with the introduction of Equal Rights, some people argue that it's only fair that the Sami also need to serve the Motherland. Forming an Corps of Sami Hunters, raised in the tundra to be expert marksmen from a very young age, would be some very powerful symbolism, and would, without a doubt, become an elite unit within our army. All we need to do is provide the equipment and funds for this endeavour."
+ SWE_stockpile_food:0 "Stockpile Food"
+ SWE_stockpile_food_desc:0 "A famine is coming, and we §bhave§! to prepare for it. We should buy up from from neighbouring countries and stockpile it in preperation, so that we may later distribute it to the famished people. The more food we stockpile, the more protected we will be against the famine. \n\nYou can do this Descision up to §bthree§! times, each time you do it, the effects of the eventual famine will become lesser"
 
  #Argentina
  ARG_centralize_military:0 "Centralization of the Military"

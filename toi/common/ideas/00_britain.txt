@@ -486,5 +486,23 @@ ideas = {
 				drift_defence_factor = 1
 			}
 		}
+		
+		ENG_idea_swedish_lumber_imports = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_the_london_naval_treaty
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+			}
+		}		
 	}
 }

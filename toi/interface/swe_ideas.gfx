@@ -2,15 +2,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_SWE_Finnish_Defeat"
 		texturefile = "gfx/interface/ideas/SWE/SWE_Finnish_Defeat.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SWE_Inept_Army"
-		texturefile = "gfx/interface/ideas/SWE/SWE_Inept_Army.dds"
 	}	
 	spriteType = {
-		name = "GFX_idea_SWE_Toxic_Politics"
-		texturefile = "gfx/interface/ideas/SWE/SWE_Toxic_Politics.dds"
-	}
+		name = "GFX_idea_SWE_Cronyistic_Cabinet"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Cronyistic_Cabinet.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_SWE_Meritocratic_Cabinet"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Meritocratic_Cabinet.dds"
+	}			
 	spriteType = {
 		name = "GFX_idea_SWE_government_intervention_judicial"
 		texturefile = "gfx/interface/ideas/SWE/SWE_government_intervention_judicial.dds"
@@ -20,13 +20,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SWE/SWE_lumber_boom.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_SWE_profits_for_the_rich"
-		texturefile = "gfx/interface/ideas/SWE/SWE_profits_for_the_rich.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_SWE_SWAFD"
 		texturefile = "gfx/interface/ideas/SWE/SWE_SWAFD.dds"
-	}		
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_strikes"
+		texturefile = "gfx/interface/ideas/SWE/SWE_strikes.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_SWE_fuck_the_poor"
+		texturefile = "gfx/interface/ideas/SWE/SWE_fuck_the_poor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_fuck_women"
+		texturefile = "gfx/interface/ideas/SWE/SWE_fuck_women.dds"
+	}
+		spriteType = {
+		name = "GFX_idea_SWE_workers_economy"
+		texturefile = "gfx/interface/ideas/SWE/idea_SWE_workers_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_rich_economy"
+		texturefile = "gfx/interface/ideas/SWE/idea_SWE_rich_economy.dds"
+	}	
 	spriteType = {
 		name = "GFX_idea_SWE_Gustaf_Rudolf_Abelin"
 		texturefile = "gfx/interface/ideas/SWE/SWE_Abelin.dds"
@@ -56,7 +72,356 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SWE/SWE_Abelin.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_focus_lifeguard"
+		name = "GFX_idea_SWE_Louis_De_Geer"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Louis_de_Geer.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_SWE_Johan_August_Gripenstedt"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Johan_August_Gripenstedt.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_Fredrik_Georg_Afzelius"
+		texturefile = "gfx/interface/ideas/SWE/SWE_Fredrik_Georg_Afzelius.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_lifeguard"
 		texturefile = "gfx/interface/goals/Sweden/focus_lifeguard.dds"
-	}		
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_traditionalism"
+		texturefile = "gfx/interface/goals/Sweden/focus_traditionalism.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_why_does_everyone_hate_us"
+		texturefile = "gfx/interface/goals/Sweden/focus_why_does_everyone_hate_us.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_subsidise_industries"
+		texturefile = "gfx/interface/goals/Sweden/focus_subsidise_industries.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_social_issues"
+		texturefile = "gfx/interface/goals/Sweden/focus_social_issues.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_slander_opposition"
+		texturefile = "gfx/interface/goals/Sweden/focus_slander_opposition.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_see_to_economy"
+		texturefile = "gfx/interface/goals/Sweden/focus_see_to_economy.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_secure_vote"
+		texturefile = "gfx/interface/goals/Sweden/focus_secure_vote.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_secure_state"
+		texturefile = "gfx/interface/goals/Sweden/focus_secure_state.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_reconcile_gripenstedt"
+		texturefile = "gfx/interface/goals/Sweden/focus_reconcile_gripenstedt.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_purge_liberals"
+		texturefile = "gfx/interface/goals/Sweden/focus_purge_liberals.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_paramilitary_endorsement"
+		texturefile = "gfx/interface/goals/Sweden/focus_paramilitary_endorsement.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_oppress_poor"
+		texturefile = "gfx/interface/goals/Sweden/focus_oppress_poor.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_new_government"
+		texturefile = "gfx/interface/goals/Sweden/focus_new_government.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_meritocratic"
+		texturefile = "gfx/interface/goals/Sweden/focus_meritocratic.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_manipulate_the_poor"
+		texturefile = "gfx/interface/goals/Sweden/focus_manipulate_the_poor.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_magnates_support"
+		texturefile = "gfx/interface/goals/Sweden/focus_magnates_support.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_legislative_agenda"
+		texturefile = "gfx/interface/goals/Sweden/focus_legislative_agenda.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_kill_gripenstedt"
+		texturefile = "gfx/interface/goals/Sweden/focus_kill_gripenstedt.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_fearmonger_economy"
+		texturefile = "gfx/interface/goals/Sweden/focus_fearmonger_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_cronyism"
+		texturefile = "gfx/interface/goals/Sweden/focus_cronyism.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_compromise_liberals"
+		texturefile = "gfx/interface/goals/Sweden/focus_compromise_liberals.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_capture_parliament"
+		texturefile = "gfx/interface/goals/Sweden/focus_capture_parliament.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_arrest_suffragetes"
+		texturefile = "gfx/interface/goals/Sweden/focus_arrest_suffragetes.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_agricultural_economy"
+		texturefile = "gfx/interface/goals/Sweden/focus_agricultural_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_accept_capitalism"
+		texturefile = "gfx/interface/goals/Sweden/focus_accept_capitalism.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_fuck_veterans"
+		texturefile = "gfx/interface/goals/Sweden/focus_fuck_veterans.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_ally_with_left"
+		texturefile = "gfx/interface/goals/Sweden/focus_ally_with_left.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_brain"
+		texturefile = "gfx/interface/goals/Sweden/focus_brain.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_bremer"
+		texturefile = "gfx/interface/goals/Sweden/focus_bremer.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_revolution_tools"
+		texturefile = "gfx/interface/goals/Sweden/goal_revolution_tools.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_call_the_army"
+		texturefile = "gfx/interface/goals/Sweden/focus_call_the_army.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_capitalism_liberalism"
+		texturefile = "gfx/interface/goals/Sweden/focus_capitalism_liberalism.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_social_democracy"
+		texturefile = "gfx/interface/goals/Sweden/focus_social_democracy.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_christian_socialism"
+		texturefile = "gfx/interface/goals/Sweden/focus_christian_socialism.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_crowd"
+		texturefile = "gfx/interface/goals/Sweden/focus_crowd.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_de_geer"
+		texturefile = "gfx/interface/goals/Sweden/focus_de_geer.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_disawow_left"
+		texturefile = "gfx/interface/goals/Sweden/focus_disawow_left.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_economic_justice"
+		texturefile = "gfx/interface/goals/Sweden/focus_economic_justice.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_failure"
+		texturefile = "gfx/interface/goals/Sweden/focus_failure.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_gripenstedt"
+		texturefile = "gfx/interface/goals/Sweden/focus_gripenstedt.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_gunther"
+		texturefile = "gfx/interface/goals/Sweden/focus_gunther.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_hamilton"
+		texturefile = "gfx/interface/goals/Sweden/focus_hamilton.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_rally_people"
+		texturefile = "gfx/interface/goals/Sweden/focus_rally_people.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_social_freedom"
+		texturefile = "gfx/interface/goals/Sweden/focus_social_freedom.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_unity"
+		texturefile = "gfx/interface/goals/Sweden/focus_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_universal_education"
+		texturefile = "gfx/interface/goals/Sweden/focus_universal_education.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_victory"
+		texturefile = "gfx/interface/goals/Sweden/focus_victory.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_we_need_a_leader"
+		texturefile = "gfx/interface/goals/Sweden/focus_we_need_a_leader.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_liberalisation"
+		texturefile = "gfx/interface/goals/Sweden/focus_liberalisation.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_appeal_to_workers"
+		texturefile = "gfx/interface/goals/Sweden/focus_appeal_to_workers.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_suffrage"
+		texturefile = "gfx/interface/goals/Sweden/focus_suffrage.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_brain"
+		texturefile = "gfx/interface/goals/Sweden/goal_brain.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_economic_reform"
+		texturefile = "gfx/interface/goals/Sweden/focus_economic_reform.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_liberty"
+		texturefile = "gfx/interface/goals/Sweden/focus_liberty.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_negotiate_regiments"
+		texturefile = "gfx/interface/goals/Sweden/focus_negotiate_regiments.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_march_on_stockholm"
+		texturefile = "gfx/interface/goals/Sweden/goal_march_on_stockholm.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_buy_guns"
+		texturefile = "gfx/interface/goals/Sweden/goal_buy_guns.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_crush_denmark"
+		texturefile = "gfx/interface/goals/Sweden/goal_crush_denmark.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_franco_military_exercise"
+		texturefile = "gfx/interface/goals/Sweden/goal_franco_military_exercise.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_french_cooperation"
+		texturefile = "gfx/interface/goals/Sweden/goal_french_cooperation.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_look_dawn"
+		texturefile = "gfx/interface/goals/Sweden/goal_look_dawn.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_look_past"
+		texturefile = "gfx/interface/goals/Sweden/goal_look_past.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_prussian_cooperation"
+		texturefile = "gfx/interface/goals/Sweden/goal_prussian_cooperation.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_prussian_experts"
+		texturefile = "gfx/interface/goals/Sweden/goal_prussian_experts.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_european_advisers"
+		texturefile = "gfx/interface/goals/Sweden/goal_european_advisers.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_SWE_the_peoples_war"
+		texturefile = "gfx/interface/goals/Sweden/goal_the_peoples_war.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_sweden_army_reform"
+		texturefile = "gfx/interface/goals/Sweden/goal_sweden_army_reform.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_supremacy_of_will"
+		texturefile = "gfx/interface/goals/Sweden/goal_supremacy_of_will.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_officer_reform"
+		texturefile = "gfx/interface/goals/Sweden/goal_officer_reform.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_infantry_supremacy"
+		texturefile = "gfx/interface/goals/Sweden/goal_infantry_supremacy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_gustavus_vasa"
+		texturefile = "gfx/interface/goals/Sweden/goal_gustavus_vasa.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_gustavus_adolphus"
+		texturefile = "gfx/interface/goals/Sweden/goal_gustavus_adolphus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_ga_pa"
+		texturefile = "gfx/interface/goals/Sweden/goal_ga_pa.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_flexible_strategy"
+		texturefile = "gfx/interface/goals/Sweden/goal_flexible_strategy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_flexible_artillery"
+		texturefile = "gfx/interface/goals/Sweden/goal_flexible_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_firepower"
+		texturefile = "gfx/interface/goals/Sweden/goal_firepower.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_dobeln"
+		texturefile = "gfx/interface/goals/Sweden/goal_dobeln.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_charles_xi"
+		texturefile = "gfx/interface/goals/Sweden/goal_charles_xi.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_cavalry_supremacy"
+		texturefile = "gfx/interface/goals/Sweden/goal_cavalry_supremacy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_artillery_supremacy"
+		texturefile = "gfx/interface/goals/Sweden/goal_artillery_supremacy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_artillery_for_every_unit"
+		texturefile = "gfx/interface/goals/Sweden/goal_artillery_for_every_unit.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_shock_tactics"
+		texturefile = "gfx/interface/goals/Sweden/goal_shock_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_famine"
+		texturefile = "gfx/interface/goals/Sweden/goal_famine.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_SWE_famine_relief"
+		texturefile = "gfx/interface/goals/Sweden/goal_famine_relief.dds"
+	}	
+	
 }

@@ -242,3 +242,38 @@ news_event = {
 	}
 	
 }
+
+#Franco-Swedish Military Exercise
+news_event = {
+        id = news.15
+        title = news.15.t
+        desc = news.15.d
+
+        picture = GFX_news_event_anfall
+
+        major = yes
+
+        is_triggered_only = yes
+
+        option = {
+            trigger = {
+				OR = {
+					NOT = { TAG = SWE }
+					NOT = { TAG = FRA }
+					}
+				}
+                name = news.15.a
+        }
+        option = {
+            trigger = {
+                TAG = SWE
+            }
+            name = news.15.b
+        }
+        option = {
+            trigger = {
+                TAG = FRA 
+            }
+            name = news.15.c
+        }		
+}
