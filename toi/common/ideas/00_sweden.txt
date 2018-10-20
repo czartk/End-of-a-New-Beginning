@@ -16,6 +16,7 @@ ideas = {
 			modifier = {				
 				conscription = -0.01				
 				war_support_factor = -0.25
+				ai_focus_aggressive_factor = -0.25
 			}
 			equipment_bonus = {
 				infantry_equipment = {
@@ -40,10 +41,15 @@ ideas = {
 
 			picture = generic_army_problems
 			
+			research_bonus = {
+				land_doctrine = -0.10
+			}			
+			
 			modifier = {
 				army_org_factor = -0.5				
 				army_morale_factor = -0.5
 				training_time_army_factor = 4
+				ai_focus_aggressive_factor = -0.25
 			}				
 		}
 		SWE_Inept_Army_1 = {
@@ -118,7 +124,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.15				
-				political_power_factor = -0.25	
+				political_power_factor = -0.15	
 			}				
 		}
 		SWE_government_intervention_judicial = {
@@ -1574,6 +1580,64 @@ ideas = {
 			
 			modifier = {
 			}
+		}
+
+		SWE_Colonial_Purchases = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = chi_hyper_inflation3
+			
+			modifier = {
+				consumer_goods_factor = 0.05			
+			}
+		}
+
+		SWE_Colonial_Purchases2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = chi_hyper_inflation5
+			
+			modifier = {
+				consumer_goods_factor = 0.1			
+			}
+		}
+
+		SWE_reformed_army = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = general_staff
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				max_command_power = -15
+			}
 		}		
 		
 	}
@@ -1597,14 +1661,17 @@ ideas = {
 
 			
 			allowed = { 
-				always = no 
+				original_tag = SWE 
+				
 			}
 			available = 
 			{
 				NOT = { has_country_flag = purged_gripenstedt }
-			}			
+			}	
+
+			removal_cost = 750
 			
-			traits = { gripenstedt gripenstedt_pol }
+			traits = { SWE_gripenstedt SWE_gripenstedt_pol }
 
 			ai_will_do = {
 				factor = 3
@@ -1623,23 +1690,152 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}		
-	}
-	
-	army_chief = {
-
-		SWE_Gustaf_Rudolf_Abelin = {
+		}
+		
+		SWE_Ludvig_Theodor_Almqvist = {
 
 			
 			allowed = {
 				original_tag = SWE
 			}
 			
-			traits = { army_chief_organizational_2 }			
+			traits = { silent_workhorse }
+
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
+
+		SWE_Lave_Beck_Friis = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { eoanb_trait_experienced_diplomat }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SWE_Carl_Fredrik_Waern = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { captain_of_industry }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SWE_Pehr_von_Ehrenheim = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			research_bonus = {
+				land_doctrine = -0.05
+			}			
+			
+			traits = { counter_reformist }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SWE_Christofer_Rutger_Manderstrom = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}			
+			
+			traits = { smooth_talking_charmer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SWE_Henrik_Gerhard_Lagerstrale = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}			
+			
+			traits = { eoanb_trait_effective_judge }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+		
+	}
+	
+	army_chief = {
+
+		SWE_Carl_Johan_Lewenhaupt = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { army_chief_offensive_1 }			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SWE_Claes_Hugo_Raab = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+	
+			available = {
+				has_completed_focus = SWE_learn_from_prussians
+			}	
+			
+			cost = 250
+			
+			traits = { SWE_trait_raab }
+
+			research_bonus = {
+				land_doctrine = 0.05
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+
+		SWE_Johan_Henrik_Rosensvard = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}			
+			
+			traits = { army_chief_old_guard }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+		
 	}			
 		
 	navy_chief = {
@@ -1648,15 +1844,30 @@ ideas = {
 
 			
 			allowed = {
-				original_tag = GER
+				original_tag = SWE
 			}
 						
-			traits = { navy_chief_decisive_battle_3 }
+			traits = { navy_chief_decisive_battle_2 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+		
+		SWE_Christian_Anders_Sundin = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { navy_chief_reform_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+		
 	}		
 
 	high_command = {
@@ -1668,12 +1879,36 @@ ideas = {
 				original_tag = SWE
 			}
 			
-			traits = { army_cavalry_3 }
+			traits = { eoanb_trait_cav_general_2 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
+		
+		SWE_Christian_Anders_Sundin_HC = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			available = {
+				has_completed_focus = SWE_naval_focus
+			}	
+
+			cost = 250
+			
+			traits = { SWE_trait_sundin }
+			
+			research_bonus = {
+				naval_doctrine = 0.05
+			}			
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}		
 		
 		SWE_Salomon_Mauritz_von_Krusenstierna_HC = {
 
@@ -1702,7 +1937,109 @@ ideas = {
 				factor = 1
 			}
 		}
+		
+
+		SWE_Claes_Gabriel_Bergenstrahle = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { army_regrouping_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SWE_Didrik_Gillis_Bildt = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { army_artillery_1 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SWE_Michael_Gustaf_Anckarsvard = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { army_cavalry_1 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SWE_Carl_Gustaf_Lowenhielm = {
+
+			
+			allowed = {
+				original_tag = SWE
+			}
+			
+			traits = { eoanb_trait_inf_defence_1 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}		
+		
 	}
+	
+	theorist = {
+		SWE_Carl_Gustaf_Leijonhufvud = {
+
+			allowed = {
+				original_tag = SWE
+			}
+			
+			cost = 250
+
+			research_bonus = {
+				land_doctrine = 0.05
+				artillery = 0.05
+			}
+
+			traits = { SWE_trait_leijonhufvud }
+		}
+		
+		SWE_Jarl_Engene_Christerson = {
+
+			allowed = {
+				original_tag = SWE
+			}
+			
+			available = {
+				has_completed_focus = SWE_learn_from_frenchies
+			}
+			
+			cost = 250
+
+			equipment_bonus = {
+				lineship = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}			
+			
+			research_bonus = {
+				naval_doctrine = 0.05
+				lineship_tech = 0.1
+			}
+
+			traits = { SWE_trait_christerson }
+		}		
+	}	
 	
 	hidden_ideas = {
 

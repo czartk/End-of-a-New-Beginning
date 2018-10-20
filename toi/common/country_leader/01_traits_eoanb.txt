@@ -663,19 +663,19 @@ leader_traits = {
 
 	###unique traits
 	
-	gripenstedt = {
+	SWE_gripenstedt = {
 		sprite = 13
 		random = no
 		
 		consumer_goods_factor = -0.1
-		production_speed_buildings_factor = 0.05			
+		production_speed_buildings_factor = 0.1			
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	
-	gripenstedt_pol = {
+	SWE_gripenstedt_pol = {
 		sprite = 13
 		random = no
 				

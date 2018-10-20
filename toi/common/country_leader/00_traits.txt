@@ -416,6 +416,25 @@ leader_traits = {
 		}
 	}
 	
+	SWE_trait_leijonhufvud = {
+		sprite = 14
+		experience_gain_army = 0.05
+		army_artillery_attack_factor = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+
+	counter_reformist = {
+		sprite = 5
+		political_power_factor = 0.1
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}	
+	
 	mobile_warfare_expert = { 
 		sprite = 14
 		experience_gain_army = 0.05
@@ -534,6 +553,16 @@ leader_traits = {
 			factor = 1000
 		}
 	}
+	
+	SWE_trait_christerson = {
+		sprite = 14
+		
+		experience_gain_navy = 0.05
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}	
 	
 	naval_aviation_pioneer = {
 		sprite = 14
@@ -1027,6 +1056,16 @@ leader_traits = {
 	### Military Minister Traits
 	
 	# 1 is worst, 3 is best
+	
+	SWE_trait_raab = {
+		sprite = 14
+		army_speed_factor = 0.1
+		political_power_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
 	
 	army_chief_defensive_1 = { # +5 Defensive efficiency
 		sprite = 9
@@ -2332,4 +2371,17 @@ leader_traits = {
 			factor = 3
 		}
 	}
+	
+	SWE_trait_sundin = {
+		sprite = 14
+		
+		experience_gain_navy = 0.05	
+		naval_coordination = 0.01
+		naval_hit_chance = 0.05
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}	
+	
 }
