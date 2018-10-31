@@ -1,4 +1,4 @@
-﻿1857.1.1 = {
+1857.1.1 = {
   capital = 7
 
   oob = "HOL_1857"
@@ -10,31 +10,33 @@
   add_ideas = { 
     #POLITICS 
 		  
-    hos_is_leader
+    HOL_William_III
     victorian_era
-	law_victorian_army
-    agrarian
-    no_heir
-    absolute_monarchy
+    law_victorian_army
+    industrializing
+    has_heir
+    parliamentary_monarchy
 
     civilian_economy
-    limited_exports
-    two_percent
-    normal_taxes
-	cl_restricted
+    free_trade
+    three_percent
+    high_taxes
+	cl_legal
+	no_work_day_limit
+	lp_land_purchase
 
     stagnation_growth
     border_control
 	volunteer_only
     limited_equality
-    absolutism
+    property_owners_suffrage
 
-    no_constitution
-    no_elections
+    constitution_adopted
+    limited_elections
 
     privileged_education
-    state_religion
-	religion_catholic
+    secular_state
+	religion_protestant
         #NATIONAL SPIRITS
 	
   }
