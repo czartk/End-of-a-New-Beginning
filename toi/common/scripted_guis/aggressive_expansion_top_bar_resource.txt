@@ -1,0 +1,27 @@
+scripted_gui = {
+
+	aggressive_expansion_container = {
+		context_type = player_context
+		
+		window_name = "aggressive_expansion_container"
+		parent_window_token = top_bar
+		
+		visible = {
+            has_aggressive_expansion = yes
+		}
+
+		effects = {
+			aggressive_expansion_bg_click = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = show_aggressive_expansion_list }
+				set_variable = { show_aggressive_expansion_list = show }
+			}
+		}
+		
+		triggers = {
+		}
+
+		ai_weights = {
+		}
+	}
+}

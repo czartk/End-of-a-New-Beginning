@@ -1,0 +1,32 @@
+guiTypes = {
+	containerWindowType = {
+		name = "aggressive_expansion_container"
+		position = { x = 900 y = 5 }
+		
+		iconType ={
+			name ="aggressive_expansion_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=115 y=0 }
+		}
+		
+		iconType = {
+			name ="aggressive_expansion"
+			spriteType = "GFX_usa_congress"
+			position = { x= 120 y = 6 }
+		}
+		
+		instantTextBoxType = {
+			name ="aggressive_expansion_text"
+			position = { x= 130 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?aggressive_expansion]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "AGGRESSIVE_EXPANSION_TOOLTIP"
+			pdx_tooltip_delayed = "USA_CONGRESS_TOOLTIP_DELAYED"
+		}
+	}
+}

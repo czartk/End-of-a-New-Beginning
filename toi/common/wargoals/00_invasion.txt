@@ -304,7 +304,6 @@ wargoal_types = {
 		}
 		
 		available = {
-			PREV = { has_added_tension_amount > 30 }
 		}
 
 		liberate = {

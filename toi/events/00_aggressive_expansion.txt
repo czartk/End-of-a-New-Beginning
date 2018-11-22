@@ -104,51 +104,87 @@ country_event = {
 		ROOT = {
 			if = {
 				limit = {
-					has_added_tension_amount > 39
-					has_added_tension_amount < 49
+					check_variable = {
+						var = aggressive_expansion
+						value = 39
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = aggressive_expansion
+						value = 49
+						compare = less_than
+					}
 				}
-				add_named_threat = {
-					threat = -20
-					name = containment_target_won_name
-				}
-			}
-			else_if = {
-				limit = {
-					has_added_tension_amount > 49
-					has_added_tension_amount < 69
-				}
-				add_named_threat = {
-					threat = -40
-					name = containment_target_won_name
+				subtract_from_variable = {
+					var = aggressive_expansion
+					value = 20
 				}
 			}
 			else_if = {
 				limit = {
-					has_added_tension_amount > 69
-					has_added_tension_amount < 89
+					check_variable = {
+						var = aggressive_expansion
+						value = 49
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = aggressive_expansion
+						value = 69
+						compare = less_than
+					}
 				}
-				add_named_threat = {
-					threat = -60
-					name = containment_target_won_name
-				}
-			}
-			else_if = {
-				limit = {
-					has_added_tension_amount > 89
-					has_added_tension_amount < 99
-				}
-				add_named_threat = {
-					threat = -80
-					name = containment_target_won_name
+				subtract_from_variable = {
+					var = aggressive_expansion
+					value = 40
 				}
 			}
 			else_if = {
 				limit = {
-					has_added_tension_amount > 99
+					check_variable = {
+						var = aggressive_expansion
+						value = 69
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = aggressive_expansion
+						value = 89
+						compare = less_than
+					}
 				}
-				add_named_threat = {
-					threat = -90
-					name = containment_target_won_name
+				subtract_from_variable = {
+					var = aggressive_expansion
+					value = 60
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = aggressive_expansion
+						value = 89
+						compare = greater_than_or_equals
+					}
+					check_variable = {
+						var = aggressive_expansion
+						value = 99
+						compare = less_than
+					}
+				}
+				subtract_from_variable = {
+					var = aggressive_expansion
+					value = 80
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						var = aggressive_expansion
+						value = 99
+						compare = greater_than_or_equals
+					}
+				}
+				subtract_from_variable = {
+					var = aggressive_expansion
+					value = 90
 				}
 			}
 		}
@@ -162,7 +198,11 @@ country_event = { #everyone becomes suspicious
 	
 	trigger = {
 		NOT = { has_country_flag = containment_warning_1 }
-		has_added_tension_amount > 10
+		check_variable = {
+			var = aggressive_expansion
+			value = 10
+			compare = greater_than_or_equals
+		}
 	}
 
 	mean_time_to_happen = {
@@ -182,7 +222,11 @@ country_event = { #everyone loses suspicion
 	
 	trigger = {
 		has_country_flag = containment_warning_1
-		has_added_tension_amount < 10
+		check_variable = {
+			var = aggressive_expansion
+			value = 10
+			compare = less_than
+		}
 	}
 
 	mean_time_to_happen = {

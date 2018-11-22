@@ -1,13 +1,21 @@
 contain_aggressive_expansion = {
 	enable = {
 		any_other_country = {
-			has_added_tension_amount > 29.99
+			check_variable = {
+				var = aggressive_expansion
+				value = 30
+				compare = greater_than_or_equals
+			}
 		}
 	}
 	abort = {
 		NOT = {
 			any_other_country = {
-				has_added_tension_amount > 29.99
+				check_variable = {
+					var = aggressive_expansion
+					value = 30
+					compare = greater_than_or_equals
+				}
 			}
 		}
 	}

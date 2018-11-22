@@ -62,3 +62,5 @@
  join_containment_war:0 "§RWe will join the containment war!§!"
  containment_declined_peace:0 "We have been refused peace!"
  containment_target_won_name:0 "Won their Containment War"
+
+ AGGRESSIVE_EXPANSION_TOOLTIP:0 "§YAggressive Expansion§!\n \nYour aggressive expansion is currently §M[?aggressive_expansion]§!. If a country's aggressive expansion is high enough, nations will attempt to contain the nation before they become too large of a threat.\n \nAggressive Expansion is increased by the following actions:\n - Annexing a country: §R+15§! \n   - §G-66%§! when annexing a pre-industrial state\n   - §G-100%§! when annexing a pre-industrial state as a pre-industrial state\n - Declaring War: §R+5§!\n - Taking a unclaimed and uncored state: §R+3§!\n - Taking a claimed state: §R+1§!\n - Puppeting a country: §R+5§!\n \nAggressive Expansion can be decreased by preforming the following actions:\n - Capitulating: §G-10§!\n - Releasing a nation: §G-4§!\n - Releasing a nation as a puppet: §G-1§!\n"

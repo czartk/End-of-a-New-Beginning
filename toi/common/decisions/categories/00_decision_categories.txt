@@ -138,7 +138,11 @@ aggressive_expansion_category = {
 	
 	visible = {
 		any_other_country = {
-			has_added_tension_amount > 10
+			check_variable = {
+				var = aggressive_expansion
+				value = 10
+				compare = greater_than_or_equals
+			}
 		}
 	}
 	
