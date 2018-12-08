@@ -66,22 +66,22 @@
 set_politics = {
     parties = {
       anarchism = {
-        popularity = 3
+        popularity = 2
       }
       vanguard_communism = {
         popularity = 2
       }
       collectivist_socialism = {
-        popularity = 0
+        popularity = 1
       }
       social_egalitarianism = {
         popularity = 2
       }
       centrism = {
-        popularity = 4.4
+        popularity = 9
       }
       traditional_conservatism = {
-        popularity = 8.6
+        popularity = 4
       }
       radical_democracy = {
         popularity = 0
@@ -124,9 +124,9 @@ set_politics = {
   # POLITICAL LEADERS
 
 create_country_leader = {
-  name = "Alexandr Gorchakov"
+  name = "Alexander II"
   desc = "POLITICS_GEORGI_PLEKHANOV_DESC"
-  picture = "Portrait_RUS_Alexandr_Gorchakov.dds"
+  picture = "Portrait_RUS_Alexander_II.dds"
   expire = "1900.1.1"
   ideology = despotism
   traits = {
