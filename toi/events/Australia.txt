@@ -1,0 +1,134 @@
+add_namespace = straya
+
+#WA population boom
+country_event = {
+	id = westraya.1
+	title = westraya.1.t
+	desc = westraya.1.d
+	picture = GFX_report_event_lumber_boom
+
+	fire_only_once = yes
+
+	trigger = {
+		TAG = SRC
+		has_political_power > 50
+        has_stability > 0.5
+        num_of_factories > 3
+		date > 1889.12.12
+	}
+    
+    mean_time_to_happen = {
+		days = 5
+	}
+
+	option = { 
+        name = westraya.1.a
+        add_timed_idea = {
+            idea = AST_WA_population_boom
+            days = 1600
+        }
+	}
+}
+country_event = {
+	id = westraya.2
+	title = westraya.2.t
+	desc = westraya.2.d
+	picture = GFX_report_event_lumber_boom
+
+	fire_only_once = yes
+
+	trigger = {
+		TAG = SRC
+		has_political_power > 50
+        has_stability > 0.5
+        num_of_factories > 3
+		date > 1894.8.8
+	}
+    
+    mean_time_to_happen = {
+		days = 5
+	}
+
+	option = { 
+        name = westraya.2.a
+        add_timed_idea = {
+            idea = AST_WA_population_explosion
+            days = 1600
+        }
+	}
+}
+country_event = {
+	id = westraya.3
+	title = westraya.3.t
+	desc = westraya.3.d
+	picture = GFX_report_event_lumber_boom
+
+	fire_only_once = yes
+
+	trigger = {
+		TAG = SRC
+        num_of_factories > 2
+		date > 1890.8.8
+	}
+    
+    mean_time_to_happen = {
+		days = 160
+	}
+
+	option = { 
+        name = westraya.3.a
+        add_timed_idea = {
+            idea = AST_gold_rush
+            days = 900
+        }
+	}
+}
+country_event = {
+	id = westraya.4
+	title = westraya.4.t
+	desc = westraya.4.d
+	picture = GFX_report_event_lumber_boom
+
+	fire_only_once = yes
+
+	trigger = {
+		TAG = SRC
+        num_of_factories > 2
+		date > 1882.2.2
+	}
+    
+    mean_time_to_happen = {
+		days = 90
+	}
+
+	option = { 
+        name = westraya.4.a
+        add_timed_idea = {
+            idea = AST_gold_rush
+            days = 900
+        }
+	}
+}
+country_event = {
+	id = westraya.5
+	title = westraya.5.t
+	desc = westraya.5.d
+
+	fire_only_once = yes
+	
+	trigger = {
+	    TAG = SRC
+	    has_idea = AST_unexplored_lands
+	    owns_state = 522
+	    infrastructure > 5
+	    date > 1879.8.8
+	}
+
+    mean_time_to_happen = {
+		days = 160
+	}
+	option = { 
+	    name = westraya.5.a
+	    remove_ideas = AST_unexplored_lands 
+	    }
+}

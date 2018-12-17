@@ -42,7 +42,7 @@ ideas = {
 
                 modifier = {
                 stability_factor = -0.05
-                MONTHLY_POPULATION = 0.02
+                MONTHLY_POPULATION = 0.1
                 consumer_goods_factor = -0.02
                 }
             }
@@ -85,11 +85,55 @@ ideas = {
                picture = generic_oppression
 
                modifier = {
-               stability_factor = -0.05
+               stability_factor = -0.1
                local_resources_factor = -0.10
                production_speed_buildings_factor = -0.1
                MONTHLY_POPULATION = -0.05
                }
+            }
+            AST_native_oppresion = {
+                allowed = { 
+                    always = no
+                }
+
+               removal_cost = -1
+               
+               picture = generic_oppression
+
+               modifier = {
+               stability_factor = -0.05
+               MONTHLY_POPULATION = -0.05
+               }
+            }
+            AST_WA_population_boom = {
+                allowed = {
+                    always = no
+                }
+
+                removal_cost = -1
+
+                picture = generic_manpower_bonus
+
+                modifier = {
+                political_power_gain = -0.1
+                consumer_goods_factor = 0.05
+                MONTHLY_POPULATION = 0.50
+                }
+            }
+            AST_WA_population_explosion = {
+                allowed = {
+                    always = no
+                }
+
+                removal_cost = -1
+
+                picture = generic_manpower_bonus
+
+                modifier = {
+                political_power_gain = -0.15
+                consumer_goods_factor = 0.10
+                MONTHLY_POPULATION = 4.50
+                }
             }
         }
     }
