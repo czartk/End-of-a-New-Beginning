@@ -1,0 +1,145 @@
+﻿l_english:
+
+################################################### Victorian Era
+ 
+ poland.1.t:0 "Uprising In Poland!"
+ poland.1.d:0 "We have reports of rebels appearing in the territories of Poland, Lithuania and Ruthenia. Although it seems like the uprising is mostly happening in the polish regions. We will have to act quickly."
+ poland.1.a:0 "Kill Them. Kill Them All"
+ poland.1.b:0 "Maybe They Deserve Independence... (play as Poland)"
+
+ poland.8.t:0 "Uprising Suppressed!"
+ poland.8.d:0 "Today our brave soldiers have finally destroyed the last pockets of resistance against our great Tsar, and the uprising has been effectively suppressed"
+ poland.8.a:0 "Finally..."
+
+ poland.24.t:0 "Post-Crimean War Reforms"
+ poland.24.d:0 ""
+ poland.24.a:0 "OK"
+
+ poland.25.t:0 "Massacres of 1861"
+ poland.25.d:0 ""
+ poland.25.a:0 "OK"
+
+ poland.26.t:0 "Wielopolski government"
+ poland.26.d:0 ""
+ poland.26.a:0 "OK"
+
+ poland.27.t:0 "Agarian reform project"
+ poland.27.d:0 ""
+ poland.27.a:0 "OK"
+
+ poland.28.t:0 "Martial law in Congress Poland"
+ poland.28.d:0 ""
+ poland.28.a:0 "OK"
+
+ poland.29.t:0 "Founding of Whites"
+ poland.29.d:0 ""
+ poland.29.a:0 "OK"
+
+ poland.30.t:0 "Founding of Reds"
+ poland.30.d:0 ""
+ poland.30.a:0 "OK"
+
+ poland.31.t:0 "Branka"
+ poland.31.d:0 ""
+ poland.31.a:0 "Yes"
+ poland.31.b:0 "No"
+
+ poland.32.t:0 "End of Martial Law"
+ poland.32.d:0 ""
+ poland.32.a:0 "OK"
+
+ poland.33.t:0 "Uprising averted"
+ poland.33.d:0 ""
+ poland.33.a:0 "OK"
+
+ poland.34.t:0 "International Background"
+ poland.34.d:0 ""
+ poland.34.a:0 "OK"
+
+ poland.35.t:0 "Uprising in Poland"
+ poland.35.d:0 ""
+ poland.35.a:0 "OK"
+
+ poland.36.t:0 "Uprising in Poland"
+ poland.36.d:0 ""
+ poland.36.a:0 "OK"
+
+ poland.37.t:0 "Uprising in Poland"
+ poland.37.d:0 ""
+ poland.37.a:0 "OK"
+
+ poland.38.t:0 "Notes from France, England and Austria"
+ poland.38.d:0 ""
+ poland.38.a:0 "Break The Treaty"
+ poland.38.b:0 "Keep The Treaty"
+ poland.38.c:0 "Return To 1815"
+
+ poland.39.t:0 "Russia Returns to 1815"
+ poland.39.d:0 ""
+ poland.39.a:0 "OK"
+
+ poland.40.t:0 "Russia Breaks The Treaty"
+ poland.40.d:0 ""
+ poland.40.a:0 "OK"
+
+ poland.41.t:0 "Russia Keeps The Treaty" #AUS,FRA
+ poland.41.d:0 ""
+ poland.41.a:0 "OK"
+
+ poland.42.t:0 "Russia Keeps The Treaty" #ENG
+ poland.42.d:0 ""
+ poland.42.a:0 "OK"
+
+ poland.43.t:0 "England proposes anti-russian coalition" #FRA
+ poland.43.d:0 ""
+ poland.43.a:0 "Yes"
+ poland.43.b:0 "No"
+
+ poland.44.t:0 "France joins anti-russian coalition"
+ poland.44.d:0 ""
+ poland.44.a:0 "OK"
+
+ poland.45.t:0 "France does not join anti-russian coalition"
+ poland.45.d:0 ""
+ poland.45.a:0 "OK"
+
+ poland.46.t:0 "England proposes anti-russian coalition" #AUS
+ poland.46.d:0 ""
+ poland.46.a:0 "Yes"
+ poland.46.b:0 "No"
+
+ poland.47.t:0 "Austria joins anti-russian coalition"
+ poland.47.d:0 ""
+ poland.47.a:0 "OK"
+
+ poland.48.t:0 "Austria does not join anti-russian coalition"
+ poland.48.d:0 ""
+ poland.48.a:0 "OK"
+
+ poland.49.t:0 "Anti-Russian Coalition Has Won"
+ poland.49.d:0 ""
+ poland.49.a:0 "OK"
+
+ poland.50.t:0 "Anti-Russian Coalition Has Lost"
+ poland.50.d:0 ""
+ poland.50.a:0 "OK"
+
+ poland.51.t:0 "Pact Has Won"
+ poland.51.d:0 ""
+ poland.51.a:0 "OK"
+
+ poland.52.t:0 "Pact Has Lost"
+ poland.52.d:0 ""
+ poland.52.a:0 "OK"
+
+ poland.53.t:0 "Pact Has Lost" #ENG
+ poland.53.d:0 ""
+ poland.53.a:0 "OK"
+
+ poland.54.t:0 "Pact Has Won" #ENG
+ poland.54.d:0 ""
+ poland.54.a:0 "OK"
+
+ news.13.t:0 "Uprising In Russia!"
+ news.13.d:0 "Today Poles, Lithuanians and Ruthenians have rebelled against Russia, having enough of russian control over their territories. It has yet to be seen if they will gain independence or will they be crushed by the Russian bear"
+ news.13.a:0 "Interesting..."
