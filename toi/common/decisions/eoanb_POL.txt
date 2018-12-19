@@ -1,0 +1,320 @@
+POL_january_uprising_descision = {
+	
+    POL_Seek_International_Help_ITA = {
+        available = {
+			tag = POL
+		}
+
+		icon = GFX_decision_generic_nationalism
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			country_event = { 
+				id = poland.2
+			}
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+    }
+
+    POL_Seek_International_Help_FRA = {
+        available = {
+			tag = POL
+		}
+
+		icon = GFX_decision_generic_nationalism
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			country_event = { 
+				id = poland.3
+			}
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+    }
+
+    POL_Seek_Peace_With_Russia = {
+        available = {
+			tag = POL
+			POL = {
+			    controls_state = 10
+			    controls_state = 87
+			    controls_state = 90
+			    controls_state = 98
+			}
+			date > 1864.05.20
+		}
+
+		icon = GFX_decision_generic_form_nation
+
+		visible = {
+			
+		}
+
+		days_re_enable = 10
+
+		cost = 50
+
+		complete_effect = {
+		    country_event = { id = poland.4 }
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+    }
+
+    POL_Buy_Rifles = {
+        available = {
+			tag = POL
+		}
+
+		icon = GFX_decision_generic_industry
+
+		visible = {
+			has_completed_focus = POL_vic_Buy_Weapons
+		}
+
+		days_re_enable = 5
+
+		cost = 75
+
+		complete_effect = {
+			add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 300 } 
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+    }
+
+    POL_Buy_Uniforms_And_Horses = {
+        available = {
+			tag = POL
+		}
+
+		icon = GFX_decision_ger_military_buildup
+
+		visible = {
+			has_completed_focus = POL_vic_Buy_Weapons
+		}
+
+		days_re_enable = 10
+
+		cost = 75
+
+		complete_effect = {
+			add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 600 } 
+			add_equipment_to_stockpile = { type = cavalry_equipment_0 amount = 300 }
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+    }
+
+    POL_Buy_Artillery = {
+        available = {
+			tag = POL
+		}
+
+		icon = GFX_decision_ger_military_buildup
+
+		visible = {
+			has_completed_focus = POL_vic_Buy_Weapons
+		}
+
+		days_re_enable = 10
+
+		cost = 125
+
+		complete_effect = {
+			add_equipment_to_stockpile = { type = cannon_equipment_0 amount = 60 } 
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+    }
+
+    POL_Seek_Volunteers = {
+        available = {
+			tag = POL
+		}
+
+		icon = GFX_decision_generic_civil_support
+
+		visible = {
+			has_completed_focus = POL_vic_Recruit_Volunteers
+		}
+
+		days_re_enable = 25
+
+		cost = 75
+
+		complete_effect = {
+			add_manpower = 3000
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+    }
+
+}
+
+
+POL_recruit_generals_descision = {
+
+    POL_recruit_Romuald_Traugutt = {
+        available = {
+			tag = POL
+		}
+
+		icon = GFX_decision_generic_army_support
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			create_corps_commander = {
+                name = "Romuald Traugutt"
+                picture = "portrait_POL_Romuald_Traugutt.png"
+                traits = { }
+                skill = 4
+                attack_skill = 2
+                defense_skill = 3
+                planning_skill = 2
+                logistics_skill = 2
+            }
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+    }
+
+    POL_recruit_Apolinary_Kurowski = {
+        available = {
+			tag = POL
+		}
+
+		icon = GFX_decision_generic_army_support
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			create_corps_commander = {
+                name = "Apolinary Kurowski"
+                picture = "portrait_POL_Apolinary_Kurowski.jpg"
+                traits = { }
+                skill = 3 
+                attack_skill = 2
+                defense_skill = 2
+                planning_skill = 1
+                logistics_skill = 1
+            }
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+    }
+
+    POL_recruit_Marian_Langiewicz = {
+        available = {
+			tag = POL
+		}
+
+		icon = GFX_decision_generic_army_support
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			create_corps_commander = {
+                name = "Marian Langiewicz"
+                picture = "portrait_POL_Marian_Langiewicz.png"
+                traits = { }
+                skill = 4
+                attack_skill = 2
+                defense_skill = 2
+                planning_skill = 2
+                logistics_skill = 1
+            }
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+    }
+
+    POL_recruit_Ludwik_Mieroslawski = {
+        available = {
+			tag = POL
+		}
+
+		icon = GFX_decision_generic_army_support
+
+		visible = {
+			
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+			create_field_marshal = {
+                name = "Ludwik Mierosławski"
+                picture = "portrait_POL_Ludwik_Mieroslawski.png"
+                traits = { }
+                skill = 3
+                attack_skill = 1
+                defense_skill = 2
+                planning_skill = 2
+                logistics_skill = 1
+            }
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+    }
+
+}
