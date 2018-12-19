@@ -1,0 +1,134 @@
+division_template = {
+  name = "Polish Infantry"
+  
+  regiments = {
+    line_infantry = { x = 0 y = 0 }
+	line_infantry = { x = 1 y = 0 }
+	line_infantry = { x = 2 Y = 0 }
+  }
+}
+
+division_template = {
+  name = "Hussars"
+
+  regiments = {
+    light_cavalry = { x = 0 y = 0}
+	light_cavalry = { x = 0 y = 1}
+  }
+}
+
+units = {
+		# Kielce
+		division= {
+			name = "1st Polish Infantry"
+			location = 11532
+			division_template = "Polish Infantry"
+			start_experience_factor = 0.1
+		}
+		division= {
+			name = "2nd Polish Infantry"
+			location = 3497
+			division_template = "Polish Infantry"
+			start_experience_factor = 0.1
+		}
+		division= {
+			name = "3rd Polish Infantry"
+			location = 3482
+			division_template = "Polish Infantry"
+			start_experience_factor = 0.1
+		}
+		division= {
+			name = "1st Polish Hussars"
+			location = 3497
+			division_template = "Hussars"
+			start_experience_factor = 0.3
+		}
+		# Plock
+		division= {
+			name = "4th Polish Infantry"
+			location = 3230
+			division_template = "Polish Infantry"
+			start_experience_factor = 0.1
+		}
+		division= {
+			name = "5th Polish Infantry"
+			location = 3230
+			division_template = "Polish Infantry"
+			start_experience_factor = 0.1
+		}
+		division= {
+			name = "6th Polish Infantry"
+			location = 6567
+			division_template = "Polish Infantry"
+			start_experience_factor = 0.1
+		}
+		division= {
+			name = "2nd Polish Hussars"
+			location = 6567
+			division_template = "Hussars"
+			start_experience_factor = 0.3
+		}
+		# Lublin
+		division= {
+			name = "7th Polish Infantry"
+			location = 402
+			division_template = "Polish Infantry"
+			start_experience_factor = 0.1
+		}
+		division= {
+			name = "8th Polish Infantry"
+			location = 402
+			division_template = "Polish Infantry"
+			start_experience_factor = 0.1
+		}
+		division= {
+			name = "3rd Polish Hussars"
+			location = 9544
+			division_template = "Hussars"
+			start_experience_factor = 0.3
+		}
+		# Lithuania
+		division= {
+			name = "1st Lithuanian Infantry"
+			location = 3354
+			division_template = "Polish Infantry"
+			start_experience_factor = 0.1
+		}
+		division= {
+			name = "2nd Lithuanian Infantry"
+			location = 9731
+			division_template = "Polish Infantry"
+			start_experience_factor = 0.1
+		}
+		division= {
+			name = "1st Lithuanian Hussars"
+			location = 3354
+			division_template = "Hussars"
+			start_experience_factor = 0.3
+		}
+		# Ruthenian
+		division= {
+			name = "1st Ruthenian Infantry"
+			location = 3267
+			division_template = "Polish Infantry"
+			start_experience_factor = 0.1
+		}
+		division= {
+			name = "2nd Ruthenian Infantry"
+			location = 277
+			division_template = "Polish Infantry"
+			start_experience_factor = 0.1
+		}
+		division= {
+			name = "3rd Ruthenian Infantry"
+			location = 3378
+			division_template = "Polish Infantry"
+			start_experience_factor = 0.1
+		}
+		division= {
+			name = "1st Ruthenian Hussars"
+			location = 3267
+			division_template = "Hussars"
+			start_experience_factor = 0.3
+		}
+}

@@ -1,0 +1,32 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_goal_focus_PLC"
+		texturefile = "gfx/interface/goals/focus_PLC.png"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_focus_pol_1815"
+		texturefile = "gfx/interface/goals/focus_pol_1815.png"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_focus_ally_POL"
+		texturefile = "gfx/interface/goals/focus_ally_POL.png"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_focus_POL_Reborn"
+		texturefile = "gfx/interface/goals/poland/focus_poland_reborn.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_focus_POL_PLC_traditions"
+		texturefile = "gfx/interface/goals/poland/focus_commonwealth_traditions.dds"
+	}
+	
+
+
+}
+
+
