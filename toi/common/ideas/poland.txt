@@ -174,7 +174,7 @@ political_advisor = {
 		visible = {
 		    OR = {
                 has_completed_focus = POL_vic_Equal_Treatment
-                has_completed_focus = POL_vic_Victory
+                has_completed_focus = POL_vic_Poland_Reborn
 		    }
 		    date < 1878.4.5
 		    NOT = {
@@ -185,7 +185,7 @@ political_advisor = {
 		available = {
 			OR = {
                 has_completed_focus = POL_vic_Equal_Treatment
-                has_completed_focus = POL_vic_Victory
+                has_completed_focus = POL_vic_Poland_Reborn
 		    }
 		    date < 1878.4.5
 		    NOT = {
@@ -208,7 +208,7 @@ political_advisor = {
 		visible = {
 		    OR = {
                 has_completed_focus = POL_vic_Appoint_A_Cabinet
-                has_completed_focus = POL_vic_Victory
+                has_completed_focus = POL_vic_Poland_Reborn
 		    }
 		    date < 1887.7.18
 		    NOT = {
@@ -219,7 +219,7 @@ political_advisor = {
 		available = {
 			OR = {
                 has_completed_focus = POL_vic_Appoint_A_Cabinet
-                has_completed_focus = POL_vic_Victory
+                has_completed_focus = POL_vic_Poland_Reborn
 		    }
 		    date < 1887.7.18
 		    NOT = {
@@ -242,7 +242,7 @@ political_advisor = {
 		visible = {
 		    OR = {
                 has_completed_focus = POL_vic_Appoint_A_Cabinet
-                has_completed_focus = POL_vic_Victory
+                has_completed_focus = POL_vic_Poland_Reborn
 		    }
 		    date < 1893.8.2
 		    NOT = {
@@ -253,7 +253,7 @@ political_advisor = {
 		available = {
 			OR = {
                 has_completed_focus = POL_vic_Appoint_A_Cabinet
-                has_completed_focus = POL_vic_Victory
+                has_completed_focus = POL_vic_Poland_Reborn
 		    }
 		    date < 1893.8.2
 		    NOT = {
@@ -274,7 +274,7 @@ political_advisor = {
 		visible = {
 		    OR = {
                 has_completed_focus = POL_vic_Appoint_A_Cabinet
-                has_completed_focus = POL_vic_Victory
+                has_completed_focus = POL_vic_Poland_Reborn
 		    }
 		    date < 1874.10.29
 		    NOT = {
@@ -285,7 +285,7 @@ political_advisor = {
 		available = {
 			OR = {
                 has_completed_focus = POL_vic_Appoint_A_Cabinet
-                has_completed_focus = POL_vic_Victory
+                has_completed_focus = POL_vic_Poland_Reborn
 		    }
 		    date < 1874.10.29
 		    NOT = {
