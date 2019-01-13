@@ -84,12 +84,11 @@ ideas = {
 
 			removal_cost = -1
 			
-			targeted_modifier = { tag = RUS attack_bonus_against = 0.15 }
-			targeted_modifier = { tag = RUS defense_bonus_against = 0.15 }
+			targeted_modifier = { tag = RUS defense_bonus_against = 0.25 }
 
 			modifier = {
 			    out_of_supply_factor = -1
-			    surrender_limit = 0.30
+			    surrender_limit = 1
 			}
 			
 		}
