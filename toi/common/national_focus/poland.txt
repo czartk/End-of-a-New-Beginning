@@ -700,6 +700,17 @@ focus_tree = {
                 planning_skill = 2
                 logistics_skill = 1
             }
+            hidden_effect = {
+                delete_unit_template_and_units = {
+                    division_template = "Russian Line Infantry"
+                }
+                delete_unit_template_and_units = {
+                    division_template = "Grenadier Regiment"
+                }
+                delete_unit_template_and_units = {
+                    division_template = "Hussar Regiment"
+                }
+            }
 		}
 	}
 
@@ -719,7 +730,6 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 800 } 
 			unlock_decision_tooltip = POL_Buy_Rifles
 			unlock_decision_tooltip = POL_Buy_Uniforms_And_Horses
-			unlock_decision_tooltip = POL_Buy_Artillery
 		}
 	}
 
