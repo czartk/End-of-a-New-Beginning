@@ -1021,33 +1021,17 @@ country_event = {
             hidden_effect = {
                 RUS = { set_country_flag = POL_January }
                     POL = {
-                        ### Kielce
-                        set_province_controller = 3586
-                        set_province_controller = 11430
-                        set_province_controller = 3497
+                        ### Provinces
+                        set_province_controller = 6416
                         set_province_controller = 11532
-                        set_province_controller = 3482
-                        ### Plock
-				        set_province_controller = 3230
-				        set_province_controller = 6567
-				        set_province_controller = 6321
-				        set_province_controller = 9290
-				        ### Lublin
-				        set_province_controller = 402
-				        set_province_controller = 3521
-				        set_province_controller = 9544
-				        ### Lithuanian Rebels
-				        set_province_controller = 3354
-				        set_province_controller = 6314
-				        set_province_controller = 9731
-				        set_province_controller = 9499
-				        ### Ruthenian Rebels
-				        set_province_controller = 294
-				        set_province_controller = 3267
-				        set_province_controller = 6220
-				        set_province_controller = 277
-				        set_province_controller = 406
-				        set_province_controller = 3378
+                        set_province_controller = 11428
+                        set_province_controller = 3521
+                        set_province_controller = 11430
+                        set_province_controller = 493
+                        set_province_controller = 6567
+                        set_province_controller = 562
+                        set_province_controller = 290
+
 				        ###### States
 				        set_state_owner = 10
 				        set_state_owner = 90
@@ -1072,11 +1056,9 @@ country_event = {
 			            add_core_of = POL
 			        }
 			        POL = { add_ideas = POL_January_Uprising }
-			        RUS = {
-			            set_province_controller = 6416
-				        set_province_controller = 562
-				        set_province_controller = 3458
-			        }
+			        #RUS = {
+			        #    set_province_controller = 
+			        #}
 			        news_event = {
                         id = news.13
                         days = 2
@@ -1101,33 +1083,18 @@ country_event = {
             }
                 hidden_effect = {
                     POL = {
-                        ### Kielce
-				        set_province_controller = 11532
-				        set_province_controller = 3586
-				        set_province_controller = 11430
-				        set_province_controller = 3497
-                        set_province_controller = 3482
-                        ### Plock
-				        set_province_controller = 3230
-				        set_province_controller = 6567
-				        set_province_controller = 6321
-				        set_province_controller = 9290
-				        ### Lublin
-				        set_province_controller = 402
-				        set_province_controller = 3521
-				        set_province_controller = 9544
-				        ### Lithuanian Rebels
-				        set_province_controller = 3354
-				        set_province_controller = 6314
-				        set_province_controller = 9731
-				        set_province_controller = 9499
-				        ### Ruthenian Rebels
-				        set_province_controller = 294
-				        set_province_controller = 3267
-				        set_province_controller = 6220
-				        set_province_controller = 277
-				        set_province_controller = 406
-				        set_province_controller = 3378
+                        ### Provinces
+                        set_province_controller = 6416
+                        set_province_controller = 11532
+                        set_province_controller = 11428
+                        set_province_controller = 3521
+                        set_province_controller = 11430
+                        set_province_controller = 493
+                        set_province_controller = 6567
+                        set_province_controller = 562
+                        set_province_controller = 290
+
+                        ###### States
 				        set_state_owner = 10
 				        set_state_owner = 90
 				        set_state_owner = 92
@@ -1249,6 +1216,184 @@ news_event = {
 		name = news.13.a
 	}
 }
+
+country_event = {
+		id = poland.2  # Italian Volunteers
+		title = poland.2.t
+		desc = poland.2.d
+		picture = GFX_event_
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		trigger = {
+			
+		}
+		
+		option = {
+			name = poland.2.a
+			ai_chance = { factor = 100 }
+		    POL = { load_oob = POL_january_uprising_ita }
+		    create_corps_commander = {
+                name = "Francesco Nullo"
+                picture = "portrait_POL_Francesco_Nullo.dds"
+                traits = { }
+                skill = 3 
+                attack_skill = 1
+                defense_skill = 1
+                planning_skill = 1
+                logistics_skill = 1
+            }
+		}
+}
+
+country_event = {
+		id = poland.3  # French Volunteers
+		title = poland.3.t
+		desc = poland.3.d
+		picture = GFX_event_
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		trigger = {
+			
+		}
+		
+		option = {
+			name = poland.3.a
+			ai_chance = { factor = 100 }
+		    POL = { load_oob = POL_january_uprising_fra }
+		    create_corps_commander = {
+                name = "Francois de Rochebrune"
+                picture = "portrait_POL_Francois_Rochebrune.jpg"
+                traits = { }
+                skill = 3 
+                attack_skill = 2
+                defense_skill = 1
+                planning_skill = 1
+                logistics_skill = 1
+            }
+		}
+}
+
+### Peace with Russia
+
+country_event = {
+		id = poland.4
+		title = poland.4.t
+		desc = poland.4.d
+		picture = GFX_event_
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		trigger = {
+			
+		}
+		
+		option = {
+			name = poland.4.a
+			ai_chance = { factor = 100 }
+		    RUS = { country_event = { id = poland.5 } }
+		}
+}
+
+country_event = {
+		id = poland.5
+		title = poland.5.t
+		desc = poland.5.d
+		picture = GFX_event_
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		trigger = {
+			
+		}
+		
+		option = {
+			name = poland.5.a
+			ai_chance = { factor = 100 }
+		    POL = { country_event = { id = poland.6 } }
+		    white_peace = POL
+		    POL = {
+                set_state_owner = 10
+                set_state_controller = 10
+                set_state_owner = 90
+                set_state_controller = 90
+                set_state_owner = 92
+                set_state_controller = 92
+                set_state_owner = 87
+                set_state_controller = 87
+                set_state_owner = 98
+                set_state_controller = 98
+		    }
+
+		}
+
+		option = {
+			name = poland.5.b
+			ai_chance = { factor = 0 }
+		    POL = { country_event = { id = poland.7 } }
+		}
+}
+
+country_event = {
+		id = poland.6
+		title = poland.6.t
+		desc = poland.6.d
+		picture = GFX_event_
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		trigger = {
+			
+		}
+		
+		option = {
+			name = poland.6.a
+			ai_chance = { factor = 100 }
+		    remove_ideas = POL_January_Uprising
+            hidden_effect = {
+		        delete_unit_template_and_units = {
+                    division_template = "Polish Infantry"
+                }
+                delete_unit_template_and_units = {
+                    division_template = "Hussars"
+                }
+                delete_unit_template_and_units = {
+                    division_template = "Zouaves of Death"
+                }
+                delete_unit_template_and_units = {
+                    division_template = "Garibaldi Legion"
+                }
+                POL = { load_oob = POL_1863 }
+                RUS = { clr_country_flag = POL_January }
+            }
+		}
+}
+
+country_event = {
+		id = poland.7
+		title = poland.7.t
+		desc = poland.7.d
+		picture = GFX_event_
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		trigger = {
+			
+		}
+		
+		option = {
+			name = poland.7.a
+			ai_chance = { factor = 100 }
+		}
+}
+
 
 
 ##### REWORK
