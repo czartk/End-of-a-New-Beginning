@@ -4,15 +4,14 @@ division_template = {
   regiments = {
     line_infantry = { x = 0 y = 0 }
 	line_infantry = { x = 1 y = 0 }
-	line_infantry = { x = 2 Y = 0 }
   }
 }
 
 units = {
-		division= {
-			name = "Zouaves of Death"
-			location = 3482
-			division_template = "Zouaves of Death"
-			start_experience_factor = 0.8
-		}
+	division= {
+		name = "Zouaves of Death"
+		location = 3482
+		division_template = "Zouaves of Death"
+		start_experience_factor = 0.8
+	}
 }

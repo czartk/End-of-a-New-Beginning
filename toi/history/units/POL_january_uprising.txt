@@ -1,15 +1,27 @@
 division_template = {
-  name = "Polish Infantry"
+  name = "Kosynierzy"
   
   regiments = {
-    line_infantry = { x = 0 y = 0 }
-	line_infantry = { x = 1 y = 0 }
-	line_infantry = { x = 2 Y = 0 }
+    armed_peasants = { x = 0 y = 0}
+    armed_peasants = { x = 0 y = 1}
+    irregular_infantry = { x = 0 y = 2}
+    light_infantry = { x = 0 y = 3}
   }
 }
 
 division_template = {
-  name = "Hussars"
+  name = "Karabinierzy"
+  
+  regiments = {
+    irregular_infantry = { x = 0 y = 0}
+    irregular_infantry = { x = 0 y = 1}
+    irregular_infantry = { x = 0 y = 2}
+    light_infantry = { x = 0 y = 3}
+  }
+}
+
+division_template = {
+  name = "Kawaleria Samodzielna"
 
   regiments = {
     light_cavalry = { x = 0 y = 0}
@@ -18,117 +30,71 @@ division_template = {
 }
 
 units = {
-		# Kielce
-		division= {
-			name = "1st Polish Infantry"
-			location = 11532
-			division_template = "Polish Infantry"
-			start_experience_factor = 0.1
-		}
-		division= {
-			name = "2nd Polish Infantry"
-			location = 3497
-			division_template = "Polish Infantry"
-			start_experience_factor = 0.1
-		}
-		division= {
-			name = "3rd Polish Infantry"
-			location = 3482
-			division_template = "Polish Infantry"
-			start_experience_factor = 0.1
-		}
-		division= {
-			name = "1st Polish Hussars"
-			location = 3497
-			division_template = "Hussars"
-			start_experience_factor = 0.3
-		}
-		# Plock
-		division= {
-			name = "4th Polish Infantry"
-			location = 3230
-			division_template = "Polish Infantry"
-			start_experience_factor = 0.1
-		}
-		division= {
-			name = "5th Polish Infantry"
-			location = 3230
-			division_template = "Polish Infantry"
-			start_experience_factor = 0.1
-		}
-		division= {
-			name = "6th Polish Infantry"
-			location = 6567
-			division_template = "Polish Infantry"
-			start_experience_factor = 0.1
-		}
-		division= {
-			name = "2nd Polish Hussars"
-			location = 6567
-			division_template = "Hussars"
-			start_experience_factor = 0.3
-		}
-		# Lublin
-		division= {
-			name = "7th Polish Infantry"
-			location = 402
-			division_template = "Polish Infantry"
-			start_experience_factor = 0.1
-		}
-		division= {
-			name = "8th Polish Infantry"
-			location = 402
-			division_template = "Polish Infantry"
-			start_experience_factor = 0.1
-		}
-		division= {
-			name = "3rd Polish Hussars"
-			location = 9544
-			division_template = "Hussars"
-			start_experience_factor = 0.3
-		}
-		# Lithuania
-		division= {
-			name = "1st Lithuanian Infantry"
-			location = 3354
-			division_template = "Polish Infantry"
-			start_experience_factor = 0.1
-		}
-		division= {
-			name = "2nd Lithuanian Infantry"
-			location = 9731
-			division_template = "Polish Infantry"
-			start_experience_factor = 0.1
-		}
-		division= {
-			name = "1st Lithuanian Hussars"
-			location = 3354
-			division_template = "Hussars"
-			start_experience_factor = 0.3
-		}
-		# Ruthenian
-		division= {
-			name = "1st Ruthenian Infantry"
-			location = 3267
-			division_template = "Polish Infantry"
-			start_experience_factor = 0.1
-		}
-		division= {
-			name = "2nd Ruthenian Infantry"
-			location = 277
-			division_template = "Polish Infantry"
-			start_experience_factor = 0.1
-		}
-		division= {
-			name = "3rd Ruthenian Infantry"
-			location = 3378
-			division_template = "Polish Infantry"
-			start_experience_factor = 0.1
-		}
-		division= {
-			name = "1st Ruthenian Hussars"
-			location = 3267
-			division_template = "Hussars"
-			start_experience_factor = 0.3
-		}
+	division= {
+		name = "Oddział Narcyza Figiettiego"
+		location = 6416 #1 from Radom,Southern-West
+		division_template = "Kawaleria Samodzielna"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "Oddział Józefa Grekowicza"
+		location = 11532 #1 from Częstochowa,Northern-East
+		division_template = "Kosynierzy"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "Oddział Antoniego Jeziorańskiego"
+		location = 11428 #1 from Łódź,South
+		division_template = "Kosynierzy"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "Oddział Bernarda Klimaszewskiego"
+		location = 6416 #1 from Radom,Southern-West
+		division_template = "Kosynierzy"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "Oddział Karola Krysińskiego"
+		location = 3521 #1 from Siedlce,South
+		division_template = "Karabinierzy"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "Oddział Apolinarego Kurowskiego"
+		location = 11430 #1 from Częstochowa,East
+		division_template = "Kosynierzy"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "Oddział Józefa Oxińskiego"
+		location = 493 #1 from Łódź,West
+		division_template = "Karabinierzy"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "Oddział Zygmunta Padlewskiego"
+		location = 6567 #1 from Płock,East
+		division_template = "Kosynierzy"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "Oddział Władysława Rembowskiego"
+		location = 11428 #1 from Łódź,South
+		division_template = "Kawaleria Samodzielna"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "Oddział Tomasza Stamirowskiego"
+		location = 562 #1 from Radom,South
+		division_template = "Kawaleria Samodzielna"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "Oddział Aleksandra Szaniawskiego"
+		location = 290 #1 from Siedlce,Northern-East
+		division_template = "Kosynierzy"
+		start_experience_factor = 0.1
+	}
+
 }
