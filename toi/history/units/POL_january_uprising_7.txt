@@ -15,5 +15,6 @@ units = {
 		location = 584 #1 from Kalisz,South
 		division_template = "Oddział Taczanowskiego"
 		start_experience_factor = 0.2
+    start_equipment_factor = 0.59
 	}
 }

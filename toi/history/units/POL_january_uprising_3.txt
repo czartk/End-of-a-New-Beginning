@@ -16,5 +16,6 @@ units = {
 		location = 11385 #1 from Siedlce,Northern-West
 		division_template = "Oddział Mystkowskiego"
 		start_experience_factor = 0.2
+    start_equipment_factor = 0.54
 	}
 }

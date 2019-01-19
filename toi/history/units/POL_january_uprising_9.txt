@@ -14,5 +14,6 @@ units = {
 		location = 3412 #1 from Lutsk,Northern-West
 		division_template = "2 Pułk Jazdy Wołyńskiej"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.72
 	}
 }

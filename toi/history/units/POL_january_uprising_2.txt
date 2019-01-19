@@ -16,5 +16,6 @@ units = {
 		location = 467 #1 from Warsaw,Southern-West
 		division_template = "Oddział Eminowicza"
 		start_experience_factor = 0.2
+    start_equipment_factor = 0.67
 	}
 }

@@ -15,5 +15,6 @@ units = {
 		location = 6281 #1 from Suwalki,East
 		division_template = "Oddział Ramotowskiego"
 		start_experience_factor = 0.2
+    start_equipment_factor = 0.74
 	}
 }

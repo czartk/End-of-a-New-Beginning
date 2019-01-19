@@ -15,5 +15,6 @@ units = {
 		location = 6416 #1 from Kielce,North
 		division_template = "4 Pułk Olkuski"
 		start_experience_factor = 0.2
+    start_equipment_factor = 0.91
 	}
 }

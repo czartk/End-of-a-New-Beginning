@@ -15,5 +15,6 @@ units = {
 		location = 11430 #1 from Częstochowa,East
 		division_template = "3 Pułk Stopnicki"
 		start_experience_factor = 0.2
+    start_equipment_factor = 0.82
 	}
 }

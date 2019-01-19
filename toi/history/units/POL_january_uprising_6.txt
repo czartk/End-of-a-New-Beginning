@@ -16,5 +16,6 @@ units = {
 		location = 9731 #1 from Plunge,South
 		division_template = "Oddział Sierakowskiego"
 		start_experience_factor = 0.2
+    start_equipment_factor = 0.67
 	}
 }

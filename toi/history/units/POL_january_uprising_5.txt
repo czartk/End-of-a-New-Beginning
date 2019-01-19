@@ -16,5 +16,6 @@ units = {
 		location = 3559 #1 from Lublin,Northern-West
 		division_template = "Oddział Heydenreicha"
 		start_experience_factor = 0.2
+    start_equipment_factor = 0.75
 	}
 }

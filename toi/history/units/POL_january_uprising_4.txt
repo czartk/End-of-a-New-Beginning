@@ -14,5 +14,6 @@ units = {
 		location = 6511 #1 from Warsaw,South
 		division_template = "Oddział Kononowicza"
 		start_experience_factor = 0.2
+		start_equipment_factor = 0.54
 	}
 }
