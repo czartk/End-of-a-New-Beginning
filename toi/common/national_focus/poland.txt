@@ -660,46 +660,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.1
-			create_corps_commander = {
-                name = "Romuald Traugutt"
-                picture = "portrait_POL_Romuald_Traugutt.png"
-                traits = { }
-                skill = 4
-                attack_skill = 2
-                defense_skill = 3
-                planning_skill = 2
-                logistics_skill = 2
-            }
-            create_corps_commander = {
-                name = "Apolinary Kurowski"
-                picture = "portrait_POL_Apolinary_Kurowski.jpg"
-                traits = { }
-                skill = 3 
-                attack_skill = 2
-                defense_skill = 2
-                planning_skill = 1
-                logistics_skill = 1
-            }
-            create_corps_commander = {
-                name = "Marian Langiewicz"
-                picture = "portrait_POL_Marian_Langiewicz.png"
-                traits = { }
-                skill = 4
-                attack_skill = 2
-                defense_skill = 2
-                planning_skill = 2
-                logistics_skill = 1
-            }
-            create_field_marshal = {
-                name = "Ludwik Mierosławski"
-                picture = "portrait_POL_Ludwik_Mieroslawski.png"
-                traits = { }
-                skill = 3
-                attack_skill = 1
-                defense_skill = 2
-                planning_skill = 2
-                logistics_skill = 1
-            }
             hidden_effect = {
                 delete_unit_template_and_units = {
                     division_template = "Russian Line Infantry"
