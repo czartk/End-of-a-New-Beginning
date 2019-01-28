@@ -140,6 +140,22 @@
  poland.54.d:0 ""
  poland.54.a:0 "OK"
 
- news.13.t:0 "Uprising In Russia!"
- news.13.d:0 "Today Poles, Lithuanians and Ruthenians have rebelled against Russia, having enough of russian control over their territories. It has yet to be seen if they will gain independence or will they be crushed by the Russian bear"
- news.13.a:0 "Interesting..."
+ poland.12.t:0 "Ludwik Mierosławski Becomes The Dictator of the Uprising" #Ludwik Mierosławski becomes the dictator
+ poland.12.d:0 ""
+ poland.12.a:0 "OK"
+
+ poland.13.t:0 "Ludwik Mierosławski Resigns"
+ poland.13.d:0 ""
+ poland.13.a:0 "OK"
+
+ poland.14.t:0 "Marian Langiewicz Resigns"
+ poland.14.d:0 ""
+ poland.14.a:0 "OK"
+
+ poland.15.t:0 "Romuald Traugutt Becomes the Dictator"
+ poland.15.d:0 "Polish general Romuald Traugutt took matters into his own hands on 17 October 1863 to unite all classes under a single national banner that the struggle could be upheld. His restructuring in preparation for an offensive in spring 1864 was banking on a European wide war. Traugutt called upon all Polish classes to rise against Russian oppression for the creation of a new Polish state."
+ poland.15.a:0 "He Will Lead Us To Victory!"
+
+ poland.16.t:0 "Romuald Traugutt Arrested"
+ poland.16.d:0 ""
+ poland.16.a:0 "OK"
