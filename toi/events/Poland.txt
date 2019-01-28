@@ -1059,11 +1059,81 @@ country_event = {
 			        #RUS = {
 			        #    set_province_controller = 
 			        #}
-			        news_event = {
-                        id = news.13
-                        days = 2
-                        random = 1
-                    }	    
+			    POL = {
+                    create_corps_commander = {
+                        name = "Apolinary Kurowski"
+                        picture = "Portrait_POL_apolinary_kurowski.dds"
+                        traits = { ambusher POL_insurgent_general }
+                        skill = 3 
+                        id = 2055
+                        attack_skill = 2
+                        defense_skill = 2
+                        planning_skill = 1
+                        logistics_skill = 1
+                    }
+                    create_corps_commander = {
+                        name = "Antoni Jeziorański"
+                        picture = "Portrait_POL_antoni_jezioranski.dds"
+                        traits = { POL_insurgent_general }
+                        skill = 3
+                        id = 2056
+                        attack_skill = 3
+                        defense_skill = 3
+                        planning_skill = 2
+                        logistics_skill = 2
+                    }
+                    create_corps_commander = {
+                        name = "Michał Heydenreich"
+                        picture = "Portrait_POL_michal_heydenreich.dds"
+                        traits = { ambusher POL_insurgent_general }
+                        skill = 3
+                        id = 2057
+                        attack_skill = 2
+                        defense_skill = 2
+                        planning_skill = 2
+                        logistics_skill = 1
+                    }
+                    create_corps_commander = {
+                        name = "Józef Śmiechowski"
+                        picture = "Portrait_POL_jozef_smiechowski.dds"
+                        traits = { POL_insurgent_general }
+                        skill = 3
+                        id = 2058
+                        attack_skill = 2
+                        defense_skill = 2
+                        planning_skill = 2
+                        logistics_skill = 2
+                    }
+                    create_corps_commander = {
+                        name = "Edmund Taczanowski"
+                        picture = "Portrait_POL_edmund_taczanowski.dds"
+                        traits = { POL_insurgent_general }
+                        skill = 3 
+                        id = 2059
+                        attack_skill = 2
+                        defense_skill = 2
+                        planning_skill = 2
+                        logistics_skill = 1
+                    }
+                    create_corps_commander = {
+                        name = "Józef Hauke-Bosak"
+                        picture = "Portrait_POL_jozef_hauke-bosak.dds"
+                        traits = { POL_insurgent_general }
+                        skill = 3
+                        id = 2060
+                        attack_skill = 2
+                        defense_skill = 2
+                        planning_skill = 2
+                        logistics_skill = 2
+                    }
+			    }
+			    POL = {
+                    country_event = {  ## Ludwik Mierosławski becomes the dictator
+                        id = poland.12
+                        days = 27
+                        random = 5
+                    } 
+			    }   
 	        }
             country_event = {  ## International Background
                 id = poland.34
@@ -1118,11 +1188,81 @@ country_event = {
 			            add_core_of = POL
 			        }
 			        POL = { add_ideas = POL_January_Uprising }
-			        news_event = {
-                        id = news.13
-                        days = 2
-                        random = 1
+			        POL = {
+                    create_corps_commander = {
+                        name = "Apolinary Kurowski"
+                        picture = "Portrait_POL_apolinary_kurowski.dds"
+                        traits = { ambusher POL_insurgent_general }
+                        skill = 3 
+                        id = 2055
+                        attack_skill = 2
+                        defense_skill = 2
+                        planning_skill = 1
+                        logistics_skill = 1
                     }
+                    create_corps_commander = {
+                        name = "Antoni Jeziorański"
+                        picture = "Portrait_POL_antoni_jezioranski.dds"
+                        traits = { POL_insurgent_general }
+                        skill = 3
+                        id = 2056
+                        attack_skill = 3
+                        defense_skill = 3
+                        planning_skill = 2
+                        logistics_skill = 2
+                    }
+                    create_corps_commander = {
+                        name = "Michał Heydenreich"
+                        picture = "Portrait_POL_michal_heydenreich.dds"
+                        traits = { ambusher POL_insurgent_general }
+                        skill = 3
+                        id = 2057
+                        attack_skill = 2
+                        defense_skill = 2
+                        planning_skill = 2
+                        logistics_skill = 1
+                    }
+                    create_corps_commander = {
+                        name = "Józef Śmiechowski"
+                        picture = "Portrait_POL_jozef_smiechowski.dds"
+                        traits = { POL_insurgent_general }
+                        skill = 3
+                        id = 2058
+                        attack_skill = 2
+                        defense_skill = 2
+                        planning_skill = 2
+                        logistics_skill = 2
+                    }
+                    create_corps_commander = {
+                        name = "Edmund Taczanowski"
+                        picture = "Portrait_POL_edmund_taczanowski.dds"
+                        traits = { POL_insurgent_general }
+                        skill = 3 
+                        id = 2059
+                        attack_skill = 2
+                        defense_skill = 2
+                        planning_skill = 2
+                        logistics_skill = 1
+                    }
+                    create_corps_commander = {
+                        name = "Józef Hauke-Bosak"
+                        picture = "Portrait_POL_jozef_hauke-bosak.dds"
+                        traits = { POL_insurgent_general }
+                        skill = 3
+                        id = 2060
+                        attack_skill = 2
+                        defense_skill = 2
+                        planning_skill = 2
+                        logistics_skill = 2
+                    }
+			       }
+                  POL = {
+                    country_event = {  ## Ludwik Mierosławski becomes the dictator
+                        id = poland.12
+                        days = 27
+                        random = 5
+                    } 
+			      }
 	            }
 	        POL = { change_tag_from = ROOT }
 	        RUS = { set_country_flag = POL_January }
@@ -1202,21 +1342,6 @@ country_event = {
 		}
 }
 
-news_event = {
-	id = news.13  ### January Uprising News
-	title = news.13.t
-	desc = news.13.d
-	picture = GFX_report_event_january_uprising
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.13.a
-	}
-}
-
 country_event = {
 		id = poland.2  # Italian Volunteers
 		title = poland.2.t
@@ -1239,6 +1364,7 @@ country_event = {
                 picture = "portrait_POL_Francesco_Nullo.dds"
                 traits = { }
                 skill = 3 
+                id = 2050
                 attack_skill = 1
                 defense_skill = 1
                 planning_skill = 1
@@ -1269,6 +1395,7 @@ country_event = {
                 picture = "portrait_POL_Francois_Rochebrune.jpg"
                 traits = { }
                 skill = 3 
+                id = 2051
                 attack_skill = 2
                 defense_skill = 1
                 planning_skill = 1
@@ -1392,6 +1519,241 @@ country_event = {
 			name = poland.7.a
 			ai_chance = { factor = 100 }
 		}
+}
+
+### Uprising Dictators
+
+country_event = {  ## Ludwik Mierosławski becomes the dictator
+	id = poland.12
+	title = poland.12.t
+	desc = poland.12.d
+	picture = GFX_report_event_generic_read_write
+		
+	fire_only_once = yes
+	is_triggered_only = yes
+		
+	trigger = {
+			
+	}
+		
+	option = {
+		name = poland.12.a  ### OK
+		ai_chance = { factor = 100 }
+		create_field_marshal = {
+            name = "Ludwik Mierosławski"
+            picture = "Portrait_POL_ludwik_mieroslawski.dds"
+            traits = { POL_insurgent_general }
+            skill = 2
+            id = 2054
+            attack_skill = 1
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 1
+        }
+        create_country_leader = {
+	        name = "Ludwik Mierosławski"
+	        desc = "POLITICS_TEMP_DESC"
+	        picture = "Portrait_POL_ludwik_mieroslawski.dds"
+	        expire = "1965.1.1"
+	        ideology = reactionary
+	        traits = {}
+        }
+        hidden_effect = {
+          limit = {
+           if = { POL = { exists = yes } }
+            POL = {
+                country_event = {  ## Ludwik Mierosławski resigns
+                    id = poland.13
+                    days = 22
+                    random = 5
+                } 
+			}
+		  }
+        }
+	}
+}
+
+country_event = {  ## Ludwik Mierosławski resigns
+	id = poland.13
+	title = poland.13.t
+	desc = poland.13.d
+	picture = GFX_report_event_generic_read_write
+		
+	fire_only_once = yes
+	is_triggered_only = yes
+		
+	trigger = {
+			
+	}
+		
+	option = {
+		name = poland.13.a  ### OK
+		ai_chance = { factor = 100 }
+        remove_unit_leader = 2054
+        hidden_effect = {
+            set_politics = {
+	            ruling_party = traditional_conservatism
+            }
+            create_country_leader = {
+	            name = "National Government (Red)"
+	            desc = "POLITICS_TEMP_DESC"
+	            picture = "Portrait_POL_National_Goverment.png"
+	            expire = "1965.1.1"
+	            ideology = reactionary
+	            traits = {}
+            }
+        }
+        create_country_leader = {
+	        name = "Marian Langiewicz"
+	        desc = "POLITICS_TEMP_DESC"
+	        picture = "Portrait_POL_marian_langiewicz.dds"
+	        expire = "1965.1.1"
+	        ideology = conserv
+	        traits = {}
+        }
+        create_field_marshal = {
+            name = "Marian Langiewicz"
+            picture = "Portrait_POL_marian_langiewicz.dds"
+            traits = { trickster  POL_insurgent_general }
+            skill = 3
+            id = 2053
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 2
+        }
+        hidden_effect = {
+          limit = {
+           if = { POL = { exists = yes } }
+            POL = {
+                country_event = {  ## Marian Langiewicz resigns
+                    id = poland.14
+                    days = 7
+                    random = 3
+                } 
+			}
+		  }
+        }
+	}
+}
+
+country_event = {  ## Marian Langiewicz resigns
+	id = poland.14
+	title = poland.14.t
+	desc = poland.14.d
+	picture = GFX_report_event_generic_read_write
+		
+	fire_only_once = yes
+	is_triggered_only = yes
+		
+	trigger = {
+			
+	}
+		
+	option = {
+		name = poland.14.a  ### OK
+		ai_chance = { factor = 100 }
+        remove_unit_leader = 2053
+        create_country_leader = {
+	        name = "National Government (Whites)"
+	        desc = "POLITICS_TEMP_DESC"
+	        picture = "Portrait_POL_National_Goverment.png"
+	        expire = "1965.1.1"
+	        ideology = conserv
+	        traits = {}
+        }
+        hidden_effect = {
+            limit = {
+                if = { POL = { exists = yes } }
+                POL = {
+                    country_event = {  ## Romuald Traugutt Becomes the Dictator
+                        id = poland.15
+                        days = 207
+                        random = 15
+                    } 
+			    }
+            }
+        }
+	}
+}
+
+country_event = {  ## Romuald Traugutt Becomes the Dictator
+	id = poland.15
+	title = poland.15.t
+	desc = poland.15.d
+	picture = GFX_report_event_generic_read_write
+		
+	fire_only_once = yes
+	is_triggered_only = yes
+		
+	trigger = {
+			
+	}
+		
+	option = {
+		name = poland.15.a  ### OK
+		ai_chance = { factor = 100 }
+        create_country_leader = {
+	        name = "Romuald Traugutt"
+	        desc = "POLITICS_TEMP_DESC"
+	        picture = "Portrait_POL_Romuald_Traugutt.dds"
+	        expire = "1965.1.1"
+	        ideology = conserv
+	        traits = {}
+        }
+        create_field_marshal = {
+            name = "Romuald Traugutt"
+            picture = "Portrait_POL_Romuald_Traugutt.dds"
+            traits = { organizer POL_insurgent_general }
+            skill = 3
+            id = 2052
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 3
+        }
+        hidden_effect = {
+          limit = {
+           if = { POL = { exists = yes } }
+            POL = {
+                country_event = {  ## Romuald Traugutt Arrested
+                    id = poland.16
+                    days = 176
+                    random = 15
+                } 
+			}
+		  }
+        }
+	}
+}
+
+country_event = {  ## Romuald Traugutt Arrested
+	id = poland.16
+	title = poland.16.t
+	desc = poland.16.d
+	picture = GFX_report_event_generic_read_write
+		
+	fire_only_once = yes
+	is_triggered_only = yes
+		
+	trigger = {
+			
+	}
+		
+	option = {
+		name = poland.16.a  ### OK
+		ai_chance = { factor = 100 }
+		remove_unit_leader = 2052
+        create_country_leader = {
+	        name = "National Government (Whites)"
+	        desc = "POLITICS_TEMP_DESC"
+	        picture = "Portrait_POL_National_Goverment.png"
+	        expire = "1965.1.1"
+	        ideology = conserv
+	        traits = {}
+        }
+        add_war_support = -0.05
+	}
 }
 
 
