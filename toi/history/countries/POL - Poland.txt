@@ -56,26 +56,26 @@
         popularity = 3
       }
       centrism = {
-        popularity = 8
+        popularity = 2
       }
       traditional_conservatism = {
-        popularity = 51
+        popularity = 45
       }
       radical_democracy = {
-        popularity = 29
+        popularity = 33
       }
       chauvinist_populism = {
         popularity = 2
       }
       autocracy = {
-        popularity = 4
+        popularity = 12
       }
       fundamentalism = {
         popularity = 0
       }
     }
 
-	  ruling_party = centrism
+	  ruling_party = radical_democracy
   }
 
   set_technology = {  # 1863 tech
@@ -95,6 +95,11 @@
   rifle_equipment1 = 1
   hand_revolvers = 1
   socket_bayonet = 1
+  tech_infantry_infantry_swords = 1
+  tech_infantry_practical_rifling = 1
+  tech_infantry_flintlock_pistol = 1
+  tech_infantry_caplock_pistol = 1
+  tech_infantry_napoleonic_uniform = 1
   civil_army_cloth = 1
   horse_transport = 1
   early_howitzer = 1
@@ -144,28 +149,36 @@
 #     ideology = despotism
 #}
 
-create_country_leader = {
-    name = "Andrzej Artur Zamoyski"
-    desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_POL_Zamoyski.png"
-    expire = 2000.09.10
-    ideology = conserv
-}
+#create_country_leader = {
+#    name = "Andrzej Artur Zamoyski"
+#    desc = "POLITICS_TEMP_DESC"
+#    picture = "Portrait_POL_Zamoyski.png"
+#    expire = 2000.09.10
+#    ideology = conserv
+#}
+
+#create_country_leader = {
+#    name = "Jarosław Dąbrowski"
+#    desc = "POLITICS_TEMP_DESC"
+#    picture = "Portrait_POL_Jaroslaw_Dabrowski.jpg"
+#    expire = 2000.09.10
+#    ideology = reactionary
+#}
 
 create_country_leader = {
-    name = "Jarosław Dąbrowski"
+    name = "Executive Committee of the National Government"
     desc = "POLITICS_TEMP_DESC"
-    picture = "Portrait_POL_Jaroslaw_Dabrowski.jpg"
+    picture = "Portrait_POL_National_Goverment.png"
     expire = 2000.09.10
     ideology = reactionary
 }
 
 create_country_leader = {
-    name = "Polish National Government"
+    name = "National Government"
     desc = "POLITICS_TEMP_DESC"
     picture = "Portrait_POL_National_Goverment.png"
     expire = 2000.09.10
-    ideology = conserv_liberal
+    ideology = conserv
 }
 
 
