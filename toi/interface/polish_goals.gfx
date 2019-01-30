@@ -7,7 +7,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_focus_pol_1815"
-		texturefile = "gfx/interface/goals/poland/focus_pol_1815.png"
+		texturefile = "gfx/interface/goals/poland/POL_Reinstaure_Congress_Poland.dds"
 	}
 
 	SpriteType = {
