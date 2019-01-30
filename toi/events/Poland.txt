@@ -2,7 +2,7 @@
 
 ################################################################ Victorian Era
 
-#### January Uprising
+####################################### January Uprising
 
 #################
 
@@ -1135,10 +1135,12 @@ country_event = {
                     } 
 			    }   
 	        }
-            country_event = {  ## International Background
-                id = poland.34
-                days = 20
-                random = 5
+	        hidden_effect = {
+                country_event = {  ## International Background
+                    id = poland.34
+                    days = 20
+                    random = 5
+                }
             }
 		}
 
@@ -1266,10 +1268,12 @@ country_event = {
 	            }
 	        POL = { change_tag_from = ROOT }
 	        RUS = { set_country_flag = POL_January }
-            country_event = {  ## International Background
-                id = poland.34
-                days = 13
-                random = 5
+	        hidden_effect = {
+                country_event = {  ## International Background
+                    id = poland.34
+                    days = 13
+                    random = 5
+                }
             }
 		}
 }
@@ -1559,8 +1563,6 @@ country_event = {  ## Ludwik Mierosławski becomes the dictator
 	        traits = {}
         }
         hidden_effect = {
-          limit = {
-           if = { POL = { exists = yes } }
             POL = {
                 country_event = {  ## Ludwik Mierosławski resigns
                     id = poland.13
@@ -1568,7 +1570,6 @@ country_event = {  ## Ludwik Mierosławski becomes the dictator
                     random = 5
                 } 
 			}
-		  }
         }
 	}
 }
@@ -1623,8 +1624,6 @@ country_event = {  ## Ludwik Mierosławski resigns
             logistics_skill = 2
         }
         hidden_effect = {
-          limit = {
-           if = { POL = { exists = yes } }
             POL = {
                 country_event = {  ## Marian Langiewicz resigns
                     id = poland.14
@@ -1632,7 +1631,6 @@ country_event = {  ## Ludwik Mierosławski resigns
                     random = 3
                 } 
 			}
-		  }
         }
 	}
 }
@@ -1663,16 +1661,13 @@ country_event = {  ## Marian Langiewicz resigns
 	        traits = {}
         }
         hidden_effect = {
-            limit = {
-                if = { POL = { exists = yes } }
-                POL = {
-                    country_event = {  ## Romuald Traugutt Becomes the Dictator
-                        id = poland.15
-                        days = 207
-                        random = 15
-                    } 
-			    }
-            }
+            POL = {
+                country_event = {  ## Romuald Traugutt Becomes the Dictator
+                    id = poland.15
+                    days = 207
+                    random = 15
+                } 
+		    }
         }
 	}
 }
@@ -1713,8 +1708,6 @@ country_event = {  ## Romuald Traugutt Becomes the Dictator
             logistics_skill = 3
         }
         hidden_effect = {
-          limit = {
-           if = { POL = { exists = yes } }
             POL = {
                 country_event = {  ## Romuald Traugutt Arrested
                     id = poland.16
@@ -1722,7 +1715,6 @@ country_event = {  ## Romuald Traugutt Becomes the Dictator
                     random = 15
                 } 
 			}
-		  }
         }
 	}
 }
