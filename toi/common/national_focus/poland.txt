@@ -31,7 +31,7 @@ focus_tree = {
 		ai_will_do = { factor = 11 } 
 
 		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = process_engineering_tech }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = mechanical_engineering_tech }
 			swap_ideas = {
 				add_idea = industrializing
 				remove_idea = agrarian
@@ -39,9 +39,11 @@ focus_tree = {
 		}
 	}
 
+	### Develop Polish Mining
+
 	focus = {
-		id = POL_vic_Expansion_Of_Lodz
-		icon = GFX_goal_generic_construction
+		id = POL_vic_Develop_Polish_Mining
+		icon = GFX_goal_generic_production
 		cost = 70
 
 		x = 1
@@ -52,219 +54,28 @@ focus_tree = {
 		prerequisite = { focus = POL_vic_Revieving_Polish_Industry }
 
 		completion_reward = {
-			random_owned_controlled_state = {
-			  prioritize = { 87 }
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = POL_vic_New_Citites
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 70
-
-		x = 1
-		y = 2
-		
-		ai_will_do = { factor = 11 } 
-
-		prerequisite = { focus = POL_vic_Expansion_Of_Lodz }
-
-		completion_reward = {
-			random_owned_controlled_state = {
-			  prioritize = { 10 }
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = POL_vic_Create_The_PKP
-		icon = GFX_goal_focus_railroad_development
-		cost = 70
-
-		x = 3
-		y = 3
-		
-		ai_will_do = { factor = 11 } 
-
-		prerequisite = { focus = POL_vic_Revieving_Polish_Industry }
-
-		completion_reward = {
-			add_timed_idea = {
-                idea = POL_vic_Expansion_Of_Railroads
-                days = 8544
-            }
-		}
-	}
-
-	focus = {
-		id = POL_vic_The_Polish_Textile_Industry
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 70
-
-		x = 3
-		y = 4
-		
-		ai_will_do = { factor = 11 } 
-
-		prerequisite = { focus = POL_vic_Create_The_PKP }
-
-		completion_reward = {
-		    random_owned_controlled_state = {
-			  prioritize = { 10 }
-				limit = {
-					free_building_slots = {
-						building = fabric_weavery
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = fabric_weavery
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = fabric_weavery
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = POL_vic_Develop_The_Lumber_Industry
-		icon = GFX_goal_generic_construct_civilian
-		cost = 70
-
-		x = 3
-		y = 5
-		
-		ai_will_do = { factor = 11 } 
-
-		prerequisite = { focus = POL_vic_The_Polish_Textile_Industry }
-
-		completion_reward = {
-		    random_owned_controlled_state = {
-			  prioritize = { 98 }
-				limit = {
-					free_building_slots = {
-						building = logging_camp
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = logging_camp
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = logging_camp
-					level = 1
-					instant_build = yes
-				}
-			}
+			add_tech_bonus = { bonus = 0.75 uses = 1 category = process_engineering_tech }
 		}
 	}
 
 	focus = {
 		id = POL_vic_Increase_Steel
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_production2
 		cost = 70
 
-		x = 1
-		y = 4
+		x = 0
+		y = 2
 		
 		ai_will_do = { factor = 11 } 
 
-		prerequisite = { focus = POL_vic_Create_The_PKP }
+		prerequisite = { focus = POL_vic_Develop_Polish_Mining }
 
 		completion_reward = {
 		    random_owned_controlled_state = {
 			  prioritize = { 90 }
 				add_resource = {
-					type = steel
-					amount = 4
+					type = iron
+					amount = 6
 				}
 			}
 		}
@@ -275,12 +86,12 @@ focus_tree = {
 		icon = GFX_goal_focus_coal_mines
 		cost = 70
 
-		x = 5
-		y = 4
+		x = 2
+		y = 2
 		
 		ai_will_do = { factor = 11 } 
 
-		prerequisite = { focus = POL_vic_Create_The_PKP }
+		prerequisite = { focus = POL_vic_Develop_Polish_Mining }
 
 		completion_reward = {  
 		    random_owned_controlled_state = {
@@ -317,17 +128,271 @@ focus_tree = {
 		}
 	}
 
-    focus = {
-		id = POL_vic_Build_Up_The_Military_Industry
-		icon = GFX_goal_generic_build_tank
+	focus = {
+		id = POL_vic_Ironworks
+		icon = GFX_goal_focus_industrial_revolution
 		cost = 70
 
-		x = 5
+		x = 1
+		y = 3
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Increase_Steel }
+		prerequisite = { focus = POL_vic_Build_Coal_Mines }
+
+		completion_reward = {  
+		    random_owned_controlled_state = {
+			  prioritize = { 90 }
+				limit = {
+					free_building_slots = {
+						building = steel_mill
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = steel_mill
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = steel_mill
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+    ### Railroads
+
+    focus = {
+		id = POL_vic_Create_The_PKP
+		icon = GFX_goal_focus_railroad_development
+		cost = 70
+
+		x = 4
 		y = 1
 		
 		ai_will_do = { factor = 11 } 
 
 		prerequisite = { focus = POL_vic_Revieving_Polish_Industry }
+
+		completion_reward = {
+			add_timed_idea = {
+                idea = POL_vic_Expansion_Of_Railroads
+                days = 8544
+            }
+		}
+	}
+
+	focus = {
+		id = POL_vic_Railroads_Development
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 70
+
+		x = 5
+		y = 2
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Create_The_PKP focus = POL_vic_Modernize_The_Economy }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+			  prioritize = { 10 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure 
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure 
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure 
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = -20
+		}
+	}
+
+    ### Economy
+
+    focus = {
+		id = POL_vic_Modernize_The_Economy
+		icon = GFX_goal_generic_consumer_goods
+		cost = 70
+
+		x = 8
+		y = 1
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Revieving_Polish_Industry }
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics_devices_tech }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = biochemistry_tech }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = humanities_tech }
+		}
+	}
+
+	focus = {
+		id = POL_vic_Expansion_Of_Lodz
+		icon = GFX_goal_generic_construction
+		cost = 70
+
+		x = 7
+		y = 2
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Modernize_The_Economy }
+		mutually_exclusive = { focus = POL_vic_Warsaw_Renovation }
+
+		completion_reward = {
+			87 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			add_political_power = -20
+		}
+	}
+
+	focus = {
+		id = POL_vic_Warsaw_Renovation
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 140
+
+		x = 9
+		y = 2
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Modernize_The_Economy }
+		mutually_exclusive = { focus = POL_vic_Expansion_Of_Lodz }
+
+		completion_reward = {
+			10 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure 
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_political_power = -60
+		}
+	}
+
+	focus = {
+		id = POL_vic_Support_Urbanisation
+		icon = GFX_goal_generic_construct_civilian
+		cost = 70
+
+		x = 6
+		y = 3
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Railroads_Development }
+		prerequisite = { focus = POL_vic_Expansion_Of_Lodz focus = POL_vic_Warsaw_Renovation }
+
+		completion_reward = {
+		    random_owned_controlled_state = {
+			  prioritize = { 90 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+			  prioritize = { 87 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {
+		id = POL_vic_Polish_Military_Industry
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 70
+
+		x = 8
+		y = 3
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Expansion_Of_Lodz focus = POL_vic_Warsaw_Renovation }
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -361,53 +426,48 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_political_power = -45
+		}
+	}
+
+	### Agriculture
+
+	focus = {
+		id = POL_vic_Restore_Agricultural_Society
+		icon = GFX_goal_focus_tomato_farming
+		cost = 70
+
+		available = {  }
+
+		prerequisite = { focus = POL_vic_Revieving_Polish_Industry }
+
+		x = 3
+		y = 3
+		
+		ai_will_do = { factor = 11 } 
+
+		completion_reward = {
+			add_timed_idea = {
+                idea = POL_Agricultural_Society
+                days = 7120
+            }
 		}
 	}
 
 	focus = {
-		id = POL_vic_Expansion_Of_The_Military_Industry
-		icon = GFX_goal_generic_construct_mil_factory
+		id = POL_vic_Agriculture_Focus
+		icon = GFX_goal_focus_telegraph_lines
 		cost = 70
 
-		x = 5
-		y = 2
+		x = 3
+		y = 4
 		
 		ai_will_do = { factor = 11 } 
 
-		prerequisite = { focus = POL_vic_Build_Up_The_Military_Industry }
+		prerequisite = { focus = POL_vic_Restore_Agricultural_Society }
 
 		completion_reward = {
-			random_owned_controlled_state = {
-			  prioritize = { 92 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = biochemistry_tech }
 		}
 	}
 
@@ -426,7 +486,7 @@ focus_tree = {
 			}
 		}
 
-		x = 12
+		x = 14
 		y = 0
 		
 		ai_will_do = { factor = 11 } 
@@ -454,103 +514,22 @@ focus_tree = {
 		}
 	}
 
-## Air 
-
-    focus = {
-		id = POL_vic_A_New_Kind_Of_Warfare
-		icon = GFX_goal_generic_build_airforce
-		cost = 70
-
-		x = 16
-		y = 1
-		
-		ai_will_do = { factor = 11 } 
-
-		prerequisite = { focus = POL_vic_Reforming_Our_Army }
-
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = aviation_tech
-			}
-		}
-	}
-
-	focus = {
-		id = POL_vic_Air_Scouts
-		icon = GFX_goal_generic_air_doctrine
-		cost = 70
-
-		x = 16
-		y = 2
-		
-		ai_will_do = { factor = 11 } 
-
-		prerequisite = { focus = POL_vic_A_New_Kind_Of_Warfare }
-
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = balloons_tech
-			}
-		}
-	}
-
-## Ground Forces
-
-    focus = {
-		id = POL_vic_Experience_From_The_Uprising
-		icon = GFX_goal_generic_position_armies
-		cost = 70.00
-
-		x = 12
-		y = 1
-		
-		ai_will_do = { factor = 11 } 
-
-		prerequisite = { focus = POL_vic_Reforming_Our_Army }
-
-		completion_reward = {
-			army_experience = 30
-		}
-	}
-
-	focus = {
-		id = POL_vic_Our_Uhlans_Are_The_Best
-		icon = GFX_goal_generic_cavalry
-		cost = 70.00
-
-		x = 11
-		y = 2
-		
-		ai_will_do = { factor = 11 } 
-
-		prerequisite = { focus = POL_vic_Experience_From_The_Uprising }
-
-		completion_reward = {
-			add_timed_idea = {
-                idea = POL_Hussars
-                days = 10680
-            }
-		}
-	}
+## Military Techs
 
 	focus = {
 		id = POL_vic_Develop_New_Weapons
 		icon = GFX_goal_generic_small_arms
 		cost = 70.00
 
-		x = 13
-		y = 2
+		x = 14
+		y = 1
 		
 		ai_will_do = { factor = 11 } 
 
-		prerequisite = { focus = POL_vic_Experience_From_The_Uprising }
+		prerequisite = { focus = POL_vic_Reforming_Our_Army }
 
 		completion_reward = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons }
 		}
 	}
 
@@ -559,8 +538,8 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		cost = 70.00
 
-		x = 13
-		y = 3
+		x = 14
+		y = 2
 		
 		ai_will_do = { factor = 11 } 
 
@@ -572,33 +551,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = POL_vic_New_Doctrines
-		icon = GFX_goal_generic_army_doctrines
-		cost = 70.00
-
-		x = 11
-		y = 3
-		
-		ai_will_do = { factor = 11 } 
-
-		prerequisite = { focus = POL_vic_Our_Uhlans_Are_The_Best }
-
-		completion_reward = {
-			add_tech_bonus = { bonus = 0.75 uses = 1 category = land_doctrine }
-		}
-	}
-
-	focus = {
 		id = POL_vic_Support_Equipment
 		icon = GFX_goal_generic_army_artillery
 		cost = 70.00
 
-		x = 12
-		y = 4
+		x = 14
+		y = 3
 		
 		ai_will_do = { factor = 11 } 
 
-		prerequisite = { focus = POL_vic_New_Doctrines }
 		prerequisite = { focus = POL_vic_Modernize_The_Artillery }
 
 		completion_reward = {
@@ -611,12 +572,13 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		cost = 70.00
 
-		x = 12
-		y = 5
+		x = 16
+		y = 4
 		
 		ai_will_do = { factor = 11 } 
 
 		prerequisite = { focus = POL_vic_Support_Equipment }
+		prerequisite = { focus = POL_vic_Our_Uhlans_Are_The_Best focus = POL_vic_Prussian_Discipline focus = POL_vic_Defensive_Tactics focus = POL_vic_Army_Professional }
 
 		completion_reward = {
 			add_tech_bonus = { bonus = 0.75 uses = 1 category = land_doctrine }
@@ -625,11 +587,229 @@ focus_tree = {
 	}
 
 	focus = {
-		id = POL_vic_Armored_Trains_Experiments
-		icon = GFX_goal_focus_railroad_development
+		id = POL_vic_New_Doctrines
+		icon = GFX_goal_generic_army_doctrines
 		cost = 70.00
 
-		x = 10
+		x = 16
+		y = 5
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_New_Polish_Army }
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.75 uses = 1 category = land_doctrine }
+		}
+	}
+
+### Doctrines
+
+	focus = {
+		id = POL_vic_Experience_From_The_Uprising
+		icon = GFX_goal_generic_position_armies
+		cost = 70.00
+
+		x = 16
+		y = 1
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Reforming_Our_Army }
+		mutually_exclusive = { focus = POL_vic_Invite_Foreign_Advisors }
+
+		completion_reward = {
+			army_experience = 30
+			swap_ideas = {
+				add_idea = limited_conscription
+				remove_idea = extensive_conscription
+			}
+		}
+	}
+
+	focus = {
+		id = POL_vic_Polish_High_Command
+		icon = GFX_focus_generic_military_academy
+		cost = 70.00
+
+		x = 16
+		y = 2
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Experience_From_The_Uprising }
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = land_doctrine }
+		}
+	}
+
+	focus = {
+		id = POL_vic_Our_Uhlans_Are_The_Best
+		icon = GFX_goal_generic_cavalry
+		cost = 70.00
+
+		x = 16
+		y = 3
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Polish_High_Command }
+
+		completion_reward = {
+			add_timed_idea = {
+                idea = POL_Hussars
+                days = 10680
+            }
+		}
+	}
+
+## Foreign Advisors
+
+	focus = {
+		id = POL_vic_Invite_Foreign_Advisors
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 70.00
+
+		x = 20
+		y = 1
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Reforming_Our_Army }
+		mutually_exclusive = { focus = POL_vic_Experience_From_The_Uprising }
+
+		completion_reward = {
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = POL_vic_Learn_From_The_Prussians
+		icon = GFX_goal_focus_ally_PRS
+		cost = 70.00
+
+		x = 18
+		y = 2
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Invite_Foreign_Advisors }
+		mutually_exclusive = { focus = POL_vic_Learn_From_The_British }
+		mutually_exclusive = { focus = POL_vic_Learn_From_The_French }
+
+		completion_reward = {
+		    add_tech_bonus = { bonus = 0.75 uses = 1 category = land_doctrine }
+		    swap_ideas = {
+				add_idea = limited_conscription
+				remove_idea = extensive_conscription
+			}
+		}
+	}
+
+	focus = {
+		id = POL_vic_Prussian_Discipline
+		icon = GFX_goal_focus_prussian_militarism
+		cost = 70.00
+
+		x = 18
+		y = 3
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Learn_From_The_Prussians }
+
+		completion_reward = {
+		    add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+		    army_experience = 10
+		}
+	}
+
+	focus = {
+		id = POL_vic_Learn_From_The_French
+		icon = GFX_goal_focus_ally_FRA
+		cost = 70.00
+
+		x = 20
+		y = 2
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Invite_Foreign_Advisors }
+		mutually_exclusive = { focus = POL_vic_Learn_From_The_British }
+		mutually_exclusive = { focus = POL_vic_Learn_From_The_Prussians }
+
+		completion_reward = {
+		    add_tech_bonus = { bonus = 0.75 uses = 1 category = land_doctrine }
+		}
+	}
+
+	focus = {
+		id = POL_vic_Defensive_Tactics
+		icon = GFX_goal_generic_defence
+		cost = 70.00
+
+		x = 20
+		y = 3
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Learn_From_The_French }
+
+		completion_reward = {
+		    add_tech_bonus = { bonus = 0.5 uses = 2 category = land_doctrine }
+		}
+	}
+
+	focus = {
+		id = POL_vic_Learn_From_The_British
+		icon = GFX_goal_focus_ally_ENG
+		cost = 70.00
+
+		x = 22
+		y = 2
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Invite_Foreign_Advisors }
+		mutually_exclusive = { focus = POL_vic_Learn_From_The_Prussians }
+		mutually_exclusive = { focus = POL_vic_Learn_From_The_French }
+
+		completion_reward = {
+		    add_tech_bonus = { bonus = 0.75 uses = 1 category = land_doctrine }
+		    swap_ideas = {
+				add_idea = volunteer_only
+				remove_idea = extensive_conscription
+			}
+		}
+	}
+
+	focus = {
+		id = POL_vic_Army_Professional
+		icon = GFX_goal_generic_military_sphere
+		cost = 70.00
+
+		x = 22
+		y = 3
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Learn_From_The_British }
+
+		completion_reward = {
+		    add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+		    army_experience = 25
+		}
+	}
+
+### Forts
+
+	focus = {
+		id = POL_vic_Modlin_Fortress_Upgrade
+		icon = GFX_goal_generic_construction2
+		cost = 70.00
+
+		x = 12
 		y = 1
 		
 		ai_will_do = { factor = 11 } 
@@ -637,8 +817,34 @@ focus_tree = {
 		prerequisite = { focus = POL_vic_Reforming_Our_Army }
 
 		completion_reward = {
-		    add_tech_bonus = { bonus = 0.25 uses = 1 category = armor }
-			army_experience = 5
+		    98 = {
+				add_building_construction = {
+					type = bunker
+					province = 6567
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = POL_vic_Fortification_Effort
+		icon = GFX_goal_generic_fortify_city
+		cost = 70.00
+
+		x = 12
+		y = 2
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Modlin_Fortress_Upgrade }
+
+		completion_reward = {
+		    add_timed_idea = {
+                idea = POL_vic_Fortification_Effort_idea
+                days = 365
+            }
 		}
 	}
 
@@ -647,14 +853,14 @@ focus_tree = {
     focus = {
 		id = POL_vic_January_Uprising
 		icon = GFX_goal_focus_PLC
-		cost = 7
+		cost = 35
 
 		available = {
 		    is_puppet = no
 		}
 
 		x = 8
-		y = 6
+		y = 5
 		
 		ai_will_do = { factor = 11 } 
 
@@ -680,7 +886,7 @@ focus_tree = {
 		cost = 35
 
 		x = 7
-		y = 8
+		y = 7
 		
 		ai_will_do = { factor = 11 } 
 
@@ -699,7 +905,7 @@ focus_tree = {
 		cost = 35
 
 		x = 8
-		y = 7
+		y = 6
 		
 		ai_will_do = { factor = 11 } 
 
@@ -718,7 +924,7 @@ focus_tree = {
 		cost = 35
 
 		x = 9
-		y = 8
+		y = 7
 		
 		ai_will_do = { factor = 11 } 
 
@@ -727,6 +933,23 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 10000
 			unlock_decision_tooltip = POL_Seek_Volunteers
+		}
+	}
+
+	focus = {
+		id = POL_vic_Gain_Support
+		icon = GFX_goal_generic_national_unity
+		cost = 70
+
+		x = 8
+		y = 8
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Establish_The_Polish_National_Goverment }
+
+		completion_reward = {
+			add_political_power = 120
 		}
 	}
 
@@ -740,10 +963,9 @@ focus_tree = {
 		available = {
 			POL = { has_war = no }
 			is_puppet = no
-			has_government = centrism
 		}
 
-		x = 28
+		x = 31
 		y = 0
 		
 		ai_will_do = { factor = 11 } 
@@ -754,7 +976,6 @@ focus_tree = {
                 idea = POL_vic_A_Country_Reborn
                 days = 7120
             }
-			#POL = { country_event = { id = poland.9 } }
 			hidden_effect = {
 			    10 = {
 			        remove_core_of = RUS
@@ -783,22 +1004,17 @@ focus_tree = {
 		available = {
 			POL = { has_war = no }
 			is_puppet = no
-			has_government = centrism
 		}
 
 		prerequisite = { focus = POL_vic_Poland_Reborn }
 
-		x = 27
+		x = 30
 		y = 1
 		
 		ai_will_do = { factor = 11 } 
 
 		completion_reward = {
 			add_political_power = 60
-            swap_ideas = {
-				add_idea = volunteer_only
-				remove_idea = extensive_conscription
-			}
 		}
 	}
 
@@ -810,12 +1026,11 @@ focus_tree = {
 		available = {
 			POL = { has_war = no }
 			is_puppet = no
-			has_government = centrism
 		}
 
 		prerequisite = { focus = POL_vic_Poland_Reborn }
 
-		x = 29
+		x = 32
 		y = 1
 		
 		ai_will_do = { factor = 11 } 
@@ -833,13 +1048,12 @@ focus_tree = {
 		available = {
 			POL = { has_war = no }
 			is_puppet = no
-			has_government = centrism
 		}
 
 		prerequisite = { focus = POL_vic_Establish_Civilian_Government }
 		prerequisite = { focus = POL_vic_Stabilize }
 
-		x = 28
+		x = 31
 		y = 2
 		
 		ai_will_do = { factor = 11 } 
@@ -857,13 +1071,12 @@ focus_tree = {
 
 	focus = {
 		id = POL_vic_Polish_Democracy
-		icon = GFX_focus_generic_treaty
-		cost = 35
+		icon = GFX_goal_support_democracy
+		cost = 140
 
 		available = {
 			POL = { has_war = no }
 			is_puppet = no
-			has_government = centrism
 			has_country_flag = POL_vic_Democracy_flag
 		}
 
@@ -871,7 +1084,7 @@ focus_tree = {
 		mutually_exclusive = { focus = POL_vic_Hotel_Lambert_Wins }
 		mutually_exclusive = { focus = POL_vic_Modern_Monarchy }
 
-		x = 22
+		x = 25
 		y = 3
 		
 		ai_will_do = { factor = 11 } 
@@ -882,81 +1095,22 @@ focus_tree = {
 				add_idea = universal_suffrage
 				remove_idea = universal_male_suffrage
 			}
-		}
-	}
-
-	focus = {
-		id = POL_vic_First_National_Elections
-		icon = GFX_goal_focus_elections
-		cost = 70
-
-		available = {
-			POL = { has_war = no }
-			is_puppet = no
-			has_government = centrism
-		}
-
-		prerequisite = { focus = POL_vic_Polish_Democracy }
-
-		x = 22
-		y = 4
-		
-		ai_will_do = { factor = 11 } 
-
-		completion_reward = {
-			
-		}
-	}
-
-### Whites
-
-    focus = {
-		id = POL_vic_The_Whites_Win
-		icon = GFX_goal_focus_the_elite
-		cost = 70
-
-		available = {  }
-
-		prerequisite = { focus = POL_vic_First_National_Elections }
-		mutually_exclusive = { focus = POL_vic_The_Reds_Win }
-
-		x = 25
-		y = 5
-		
-		ai_will_do = { factor = 11 } 
-
-		completion_reward = {
-			add_political_power = 60
-			add_popularity = {
-                ideology = traditional_conservatism
-                popularity = 0.06
+			create_country_leader = {
+                name = "Andrzej Artur Zamoyski"
+                desc = "POLITICS_TEMP_DESC"
+                picture = "Portrait_POL_Zamoyski.png"
+                expire = 2000.09.10
+                ideology = conserv
+            }
+            create_country_leader = {
+                name = "Jarosław Dąbrowski"
+                desc = "POLITICS_TEMP_DESC"
+                picture = "Portrait_POL_Jaroslaw_Dabrowski.jpg"
+                expire = 2000.09.10
+                ideology = reactionary
             }
 		}
 	}
-
-	focus = {
-		id = POL_vic_Restore_Agricultural_Society
-		icon = GFX_goal_focus_tomato_farming
-		cost = 70
-
-		available = {  }
-
-		prerequisite = { focus = POL_vic_The_Whites_Win }
-
-		x = 25
-		y = 6
-		
-		ai_will_do = { factor = 11 } 
-
-		completion_reward = {
-			add_timed_idea = {
-                idea = POL_Agricultural_Society
-                days = 7120
-            }
-		}
-	}
-
-### Middle
  
     focus = {
 		id = POL_vic_A_Democratic_Constitution
@@ -965,9 +1119,9 @@ focus_tree = {
 
 		available = {  }
 
-		prerequisite = { focus = POL_vic_The_Whites_Win focus = POL_vic_The_Reds_Win }
+		prerequisite = { focus = POL_vic_Polish_Democracy }
 
-		x = 22
+		x = 25
 		y = 6
 		
 		ai_will_do = { factor = 11 } 
@@ -982,33 +1136,7 @@ focus_tree = {
 		}
 	}
 
-### Reds
-
-    focus = {
-		id = POL_vic_The_Reds_Win
-		icon = GFX_goal_focus_support_conservatism
-		cost = 70
-
-		available = {  }
-
-		prerequisite = { focus = POL_vic_First_National_Elections }
-		mutually_exclusive = { focus = POL_vic_The_Whites_Win }
-
-		x = 19
-		y = 5
-		
-		ai_will_do = { factor = 11 } 
-
-		completion_reward = {
-			add_political_power = 60
-			add_popularity = {
-                ideology = radical_democracy
-                popularity = 0.16
-            }
-		}
-	}
-
-### Reforms that everyone wanted
+### Economic Reforms
 
     focus = {
 		id = POL_vic_Abolish_Serfdom
@@ -1017,45 +1145,28 @@ focus_tree = {
 
 		available = { 
 		    OR = {
-		        has_completed_focus = POL_vic_The_Whites_Win
-		        has_completed_focus = POL_vic_The_Reds_Win
-		        has_completed_focus = POL_vic_Wladyslaw_Czartoryski_Is_The_King
-		        has_completed_focus = POL_vic_Andrzej_Zamoyski_Is_The_King
+		        has_completed_focus = POL_vic_Polish_Democracy
+		        has_completed_focus = POL_vic_Hotel_Lambert_Wins
+		        has_completed_focus = POL_vic_Modern_Monarchy
 		    }
 	    }
 
 		prerequisite = { focus = POL_vic_The_Political_System }
 
-		x = 29
+		x = 32
 		y = 4
 		
-		ai_will_do = { factor = 11 } 
+		ai_will_do = { factor = 100 } 
 
 		completion_reward = {
 			swap_ideas = {
 				add_idea = lp_land_purchase
 				remove_idea = lp_serfdom
-			}
-			if = {
-                limit = {
-                    has_completed_focus = POL_vic_The_Reds_Win
-                }   
-                add_stability = -0.1
+			} 
+            add_timed_idea = {
+                idea = POL_Refund
+                days = 180
             }
-            if = {
-                limit = {
-                    OR = {
-                        has_completed_focus = POL_vic_The_Whites_Win
-                        has_completed_focus = POL_vic_Hotel_Lambert_Wins
-                        has_completed_focus = POL_vic_Modern_Monarchy
-                    }
-                }   
-                add_timed_idea = {
-                    idea = POL_Refund
-                    days = 180
-                }
-            }
-            custom_effect_tooltip = "POL_vic_POL_abolish_serfdom1"
 		}
 	}
 
@@ -1068,7 +1179,7 @@ focus_tree = {
 
 		prerequisite = { focus = POL_vic_Abolish_Serfdom }
 
-		x = 28
+		x = 31
 		y = 5
 		
 		ai_will_do = { factor = 11 } 
@@ -1087,7 +1198,7 @@ focus_tree = {
 
 		prerequisite = { focus = POL_vic_Abolish_Serfdom }
 
-		x = 30
+		x = 33
 		y = 5
 		
 		ai_will_do = { factor = 11 } 
@@ -1097,17 +1208,40 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = POL_vic_Organic_Work
+		icon = GFX_goal_anschluss
+		cost = 70
+
+		#available = {
+		#	
+		#}
+
+		x = 32
+		y = 6
+		
+		ai_will_do = { factor = 11 } 
+
+		prerequisite = { focus = POL_vic_Abolish_Serfdom }
+
+		completion_reward = {
+		    add_timed_idea = {
+                idea = POL_Organic_Work
+                days = 24920
+            }
+		}
+	}
+
 ### Hotel Lambert
 
     focus = {
 		id = POL_vic_Hotel_Lambert_Wins
 		icon = GFX_goal_focus_POL_PLC_traditions
-		cost = 70
+		cost = 140
 
 		available = { 
 		    POL = { has_war = no }
 			is_puppet = no
-			has_government = centrism
 			has_country_flag = POL_vic_Hotel_Lambert_flag
 	    }
 
@@ -1115,7 +1249,7 @@ focus_tree = {
 		mutually_exclusive = { focus = POL_vic_Polish_Democracy }
 		mutually_exclusive = { focus = POL_vic_Modern_Monarchy }
 
-		x = 34
+		x = 37
 		y = 3
 		
 		ai_will_do = { factor = 11 } 
@@ -1127,82 +1261,6 @@ focus_tree = {
                 popularity = 0.23
             }
             POL = {
-			    create_country_leader = {
-	                name = "The Sejm"
-	                desc = ""
-	                picture = ""
-	                expire = "1965.1.1"
-	                ideology = constit_monarch
-	                traits = {
-		
-	                }
-                }
-			}
-			set_party_name = { 
-                ideology = autocracy
-                long_name = POL_vic_Regency_long
-                name = POL_vic_Regency
-            }
-		}
-	}
-
-	focus = {
-		id = POL_vic_Prepare_The_Throne
-		icon = GFX_focus_generic_home_defense
-		cost = 70
-
-		available = {  }
-
-		prerequisite = { focus = POL_vic_Hotel_Lambert_Wins }
-
-		x = 34
-		y = 4
-		
-		ai_will_do = { factor = 11 } 
-
-		completion_reward = {
-			POL = {
-			    swap_ideas = {
-				    add_idea = no_heir
-				    remove_idea = non_monarchical_system
-			    }
-			    swap_ideas = {
-				    add_idea = no_elections
-				    remove_idea = free_elections
-			    }
-			    swap_ideas = {
-				    add_idea = absolutism
-				    remove_idea = universal_male_suffrage
-			    }
-			    swap_ideas = {
-				    add_idea = constitutional_monarchy
-				    remove_idea = parliamentary_republic
-			    }
-			    swap_ideas = {
-				    add_idea = hos_regency
-				    remove_idea = hos_is_leader
-			    }
-			}
-		}
-	}
-
-	focus = {
-		id = POL_vic_Wladyslaw_Czartoryski_Is_The_King
-		icon = GFX_goal_tripartite_pact
-		cost = 70
-
-		available = {  }
-
-		prerequisite = { focus = POL_vic_Prepare_The_Throne }
-
-		x = 34
-		y = 5
-		
-		ai_will_do = { factor = 11 } 
-
-		completion_reward = {
-		    add_political_power = 60
-		    POL = {
 			    create_country_leader = {
 	                name = "Władysław Czartoryski"
 	                desc = ""
@@ -1220,36 +1278,43 @@ focus_tree = {
                 name = POL_vic_Czartoryski
             }
             swap_ideas = {
-				add_idea = hos_is_leader
-				remove_idea = hos_regency
+				add_idea = has_heir
+				remove_idea = non_monarchical_system
 			}
 			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
+				add_idea = no_elections
+				remove_idea = free_elections
 			}
-		}
-	}
-
-### Political Reforms
-
-	focus = {
-		id = POL_vic_Political_Reforms
-		icon = GFX_goal_generic_neutrality_focus
-		cost = 70
-
-		#available = {
-		#	
-		#}
-
-		x = 32
-		y = 6
-		
-		ai_will_do = { factor = 11 } 
-
-		prerequisite = { focus = POL_vic_Wladyslaw_Czartoryski_Is_The_King }
-
-		completion_reward = {
-		    add_political_power = 120
+			swap_ideas = {
+				add_idea = absolutism
+				remove_idea = universal_male_suffrage
+			}
+			swap_ideas = {
+				add_idea = constitutional_monarchy
+				remove_idea = parliamentary_republic
+			}
+			hidden_effect = {
+                POL = {
+			        create_country_leader = {
+	                    name = "Władysław Czartoryski"
+	                    desc = ""
+	                    picture = ""
+	                    expire = "1965.1.1"
+	                    ideology = conserv
+	                    traits = { }
+                    }
+			    }
+			    POL = {
+			        create_country_leader = {
+	                    name = "Władysław Czartoryski"
+	                    desc = ""
+	                    picture = ""
+	                    expire = "1965.1.1"
+	                    ideology = reactionary
+	                    traits = { }
+                    }
+			    }
+			}
 		}
 	}
 
@@ -1264,12 +1329,12 @@ focus_tree = {
 		#	
 		#}
 
-		x = 32
-		y = 7
+		x = 37
+		y = 4
 		
 		ai_will_do = { factor = 11 } 
 
-		prerequisite = { focus = POL_vic_Political_Reforms }
+		prerequisite = { focus = POL_vic_Hotel_Lambert_Wins }
 
 		completion_reward = {
 		    swap_ideas = {
@@ -1292,14 +1357,13 @@ focus_tree = {
 
 		available = {
 			OR = {
-		        has_completed_focus = POL_vic_The_Whites_Win
-		        has_completed_focus = POL_vic_The_Reds_Win
-		        has_completed_focus = POL_vic_Wladyslaw_Czartoryski_Is_The_King
-		        has_completed_focus = POL_vic_Andrzej_Zamoyski_Is_The_King
+		        has_completed_focus = POL_vic_Polish_Democracy
+		        has_completed_focus = POL_vic_Hotel_Lambert_Wins
+		        has_completed_focus = POL_vic_Modern_Monarchy
 		    }
 		}
 
-		x = 39
+		x = 42
 		y = 4
 		
 		ai_will_do = { factor = 11 } 
@@ -1320,7 +1384,7 @@ focus_tree = {
 		#	
 		#}
 
-		x = 38
+		x = 41
 		y = 5
 		
 		ai_will_do = { factor = 11 } 
@@ -1345,7 +1409,7 @@ focus_tree = {
 		#	
 		#}
 
-		x = 38
+		x = 41
 		y = 6
 		
 		ai_will_do = { factor = 11 } 
@@ -1369,7 +1433,7 @@ focus_tree = {
 		#	
 		#}
 
-		x = 40
+		x = 43
 		y = 5
 		
 		ai_will_do = { factor = 11 } 
@@ -1389,12 +1453,11 @@ focus_tree = {
     focus = {
 		id = POL_vic_Modern_Monarchy
 		icon = GFX_focus_rom_royal_dictatorship
-		cost = 70
+		cost = 140
 
 		available = { 
 		    POL = { has_war = no }
 			is_puppet = no
-			has_government = centrism
 			has_country_flag = POL_vic_Modern_Monarchy_flag
 		}
 
@@ -1402,7 +1465,7 @@ focus_tree = {
 		mutually_exclusive = { focus = POL_vic_Polish_Democracy }
 		mutually_exclusive = { focus = POL_vic_Hotel_Lambert_Wins }
 
-		x = 44
+		x = 47
 		y = 3
 		
 		ai_will_do = { factor = 11 } 
@@ -1414,83 +1477,6 @@ focus_tree = {
                 popularity = 0.31
             }
             POL = {
-			    create_country_leader = {
-	                name = "The Sejm"
-	                desc = ""
-	                picture = ""
-	                expire = "1965.1.1"
-	                ideology = constit_monarch
-	                traits = {
-		
-	                }
-                }
-			}
-			set_party_name = { 
-                ideology = autocracy
-                long_name = POL_vic_Regency_long
-                name = POL_vic_Regency
-            }
-		}
-	}
-
-	focus = {
-		id = POL_vic_Parliamentary_Reforms
-		icon = GFX_goal_focus_decentralisation_power
-		cost = 70
-
-		available = {  }
-
-		prerequisite = { focus = POL_vic_Modern_Monarchy }
-
-		x = 44
-		y = 4
-		
-		ai_will_do = { factor = 11 } 
-
-		completion_reward = {
-		    add_political_power = 60
-			POL = {
-			    swap_ideas = {
-				    add_idea = no_heir
-				    remove_idea = non_monarchical_system
-			    }
-			    swap_ideas = {
-				    add_idea = no_elections
-				    remove_idea = free_elections
-			    }
-			    swap_ideas = {
-				    add_idea = parliamentary_suffrage
-				    remove_idea = universal_male_suffrage
-			    }
-			    swap_ideas = {
-				    add_idea = parliamentary_monarchy
-				    remove_idea = parliamentary_republic
-			    }
-			    swap_ideas = {
-				    add_idea = hos_regency
-				    remove_idea = hos_is_leader
-			    }
-			}
-		}
-	}
-
-	focus = {
-		id = POL_vic_Andrzej_Zamoyski_Is_The_King
-		icon = GFX_goal_tripartite_pact
-		cost = 70
-
-		available = {  }
-
-		prerequisite = { focus = POL_vic_Parliamentary_Reforms }
-
-		x = 44
-		y = 5
-		
-		ai_will_do = { factor = 11 } 
-
-		completion_reward = {
-		    add_political_power = 60
-		    POL = {
 			    create_country_leader = {
 	                name = "Andrzej Zamoyski"
 	                desc = ""
@@ -1507,14 +1493,40 @@ focus_tree = {
                 long_name = POL_vic_Zamoyski_long
                 name = POL_vic_Zamoyski
             }
-			POL = {
-			    swap_ideas = {
-				    add_idea = has_heir
-				    remove_idea = no_heir
-			    }
-			    swap_ideas = {
-				    add_idea = hos_is_leader 
-				    remove_idea = hos_regency
+            swap_ideas = {
+				add_idea = has_heir
+				remove_idea = non_monarchical_system
+			}
+			swap_ideas = {
+				add_idea = no_elections
+				remove_idea = free_elections
+			}
+			swap_ideas = {
+				add_idea = parliamentary_suffrage
+				remove_idea = universal_male_suffrage
+			}
+			swap_ideas = {
+				add_idea = parliamentary_monarchy
+				remove_idea = parliamentary_republic
+			}
+			hidden_effect = {
+                POL = {
+			        create_country_leader = {
+	                    name = "Andrzej Zamoyski"
+	                    desc = ""
+	                    picture = "Portrait_POL_Zamoyski.png"
+	                    expire = "1965.1.1"
+	                    ideology = reactionary
+	                    traits = { }
+                    }
+                    create_country_leader = {
+	                    name = "Andrzej Zamoyski"
+	                    desc = ""
+	                    picture = "Portrait_POL_Zamoyski.png"
+	                    expire = "1965.1.1"
+	                    ideology = conserv
+	                    traits = { }
+                    }
 			    }
 			}
 		}
@@ -1527,22 +1539,19 @@ focus_tree = {
 
 		available = {  }
 
-		prerequisite = { focus = POL_vic_Andrzej_Zamoyski_Is_The_King }
+		prerequisite = { focus = POL_vic_Modern_Monarchy }
 
-		x = 46
-		y = 6
+		x = 49
+		y = 4
 		
 		ai_will_do = { factor = 11 } 
 
 		completion_reward = {
+		    add_stability = 0.05
 			POL = {
 			    swap_ideas = {
 				    add_idea = limited_elections 
 				    remove_idea = no_elections
-			    }
-			    swap_ideas = {
-				    add_idea = universal_suffrage 
-				    remove_idea = parliamentary_suffrage
 			    }
 			}
 		}
@@ -1555,10 +1564,10 @@ focus_tree = {
 
 		available = {  }
 
-		prerequisite = { focus = POL_vic_Andrzej_Zamoyski_Is_The_King }
+		prerequisite = { focus = POL_vic_Modern_Monarchy }
 
-		x = 44
-		y = 7
+		x = 47
+		y = 5
 		
 		ai_will_do = { factor = 11 } 
 
@@ -1701,8 +1710,8 @@ focus_tree = {
 		ai_will_do = { factor = 11 } 
 
 		completion_reward = {
-		    add_tech_bonus = { bonus = 0.5 uses = 2 category = land_doctrine }
-			army_experience = 30
+		    add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+			army_experience = 15
 		}
 	}
 
@@ -1886,8 +1895,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = POL_vic_German_Tarrifs
-		icon = GFX_goal_generic_trade
+		id = POL_vic_Buy_French_Weapons
+		icon = GFX_goal_focus_invite_french_diplomats
 		cost = 70
 
 		available = {  }
@@ -1900,12 +1909,7 @@ focus_tree = {
 		ai_will_do = { factor = 11 } 
 
 		completion_reward = {
-		    PRS = {
-				add_opinion_modifier = {
-					target = POL
-					modifier = sanctions
-				}
-			}
+            add_equipment_to_stockpile = { type = infantry_equipment_rifle_1 amount = 2500 producer = FRA }
 		}
 	}
 
@@ -2074,7 +2078,13 @@ focus_tree = {
 		ai_will_do = { factor = 11 } 
 
 		completion_reward = {
-			# events
+		    RUS = {
+                country_event = {
+                    id = poland.17
+                    days = 2
+                    random = 1
+                }
+		    }
 		}
 	}
 
@@ -2113,7 +2123,7 @@ focus_tree = {
             }
             add_timed_idea = {
                 idea = POL_vic_A_Country_Reborn
-                days = 3560
+                days = 3650
             }
 		}
 	}
@@ -2483,6 +2493,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_political_power = -20
 		}
 	}
 
@@ -2555,6 +2566,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_political_power = -45
 		}
 	}
 
@@ -2606,6 +2618,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_political_power = -45
 		}
 	}
 
@@ -2657,7 +2670,7 @@ focus_tree = {
 
 	focus = {
 		id = POL_vic_Create_A_Strategy
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_russian_department
 		cost = 70
 
 		#available = {
