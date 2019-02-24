@@ -606,3 +606,95 @@ POL_recruit_generals_descision = {
     }
 
 }
+
+### Diplomacy
+
+eoanb_category_diplomatic_actions = {
+	
+	### Reassert Our Claims
+	eoanb_decision_POL_1860_Reassert_Our_Claims = {
+		
+		icon = GFX_decision_generic_operation
+		
+		available = {
+		    tag = POL
+			has_war = no
+			is_puppet = no
+		}
+		
+		visible = {
+		    tag = POL
+			has_war = no
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		complete_effect = {
+			86 = {
+		        add_core_of = POL
+		    }
+		    85 = {
+		        add_core_of = POL
+		    }
+		    1002 = {
+		        add_core_of = POL
+		    }
+		    1107 = {
+		        add_core_of = POL
+		    }
+		    1232 = {
+		        add_core_of = POL
+		    }
+		    88 = {
+		        add_core_of = POL
+		    }
+		    91 = {
+		        add_core_of = POL
+		    }
+		    89 = {
+		        add_core_of = POL
+		    }
+		}
+		
+		ai_will_do = {
+			base = 1000
+		}
+	}
+
+}
+
+eoanb_category_traditions_celebrations = {
+	
+    ### Commemoration of the November Uprising
+	eoanb_decision_POL_commemoration_of_november_uprising = {
+		
+		icon = GFX_decision_generic_nationalism
+		
+		available = {
+		    tag = POL
+			has_war = no
+			is_puppet = no
+		}
+		
+		visible = {
+		    tag = POL
+			has_war = no
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			add_stability = 0.025
+			add_war_support = 0.05
+		}
+		
+		ai_will_do = {
+			base = 1000
+		}
+	}
+
+}
