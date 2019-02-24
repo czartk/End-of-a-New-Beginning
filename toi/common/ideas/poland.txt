@@ -154,6 +154,25 @@ ideas = {
 			
 		}
 
+		POL_vic_Fortification_Effort_idea = {
+
+            allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+			    production_speed_bunker_factor = 0.15
+			}
+			
+		}
+
 	}
 
 
@@ -362,8 +381,88 @@ political_advisor = {
 
 	}
 
-
 }
 
-	
+high_command = {
+
+	POL_vic_Franciszek_Rochebrune = {
+			
+	    allowed = {
+		    original_tag = POL
+		    has_unit_leader = 2051
+	    }
+			
+        traits = { 
+            army_chief_reform_2
+        }
+
+    }
+
+    POL_vic_Jozef_Hauke_Bosak = {
+			
+	    allowed = {
+		    original_tag = POL
+		    has_unit_leader = 2060
+	    }
+			
+        traits = { 
+            army_chief_offensive_2
+        }
+
+    }
+
+    POL_vic_Kazimierz_Blaszczynski = {
+			
+	    allowed = {
+		    original_tag = POL
+		    date > 1863.01.01
+		    date < 1863.06.18
+	    }
+			
+        traits = { 
+            army_cavalry_1
+        }
+
+    }
+
+    POL_vic_Anna_Pustowojtowna = {
+			
+	    allowed = {
+		    original_tag = POL
+		    date > 1863.01.01
+		    date < 1863.03.19
+	    }
+			
+        traits = { 
+            army_chief_morale_1
+        }
+
+    }
+
+    POL_vic_Stanislaw_Brzoska = {
+			
+	    allowed = {
+		    original_tag = POL
+	    }
+			
+        traits = { 
+            army_regrouping_1
+        }
+
+    }
+    
+    POL_vic_Zygmunt_Jordan = {
+			
+	    allowed = {
+		    original_tag = POL
+		    date > 1863.01.01
+		    date < 1866.08.24
+	    }
+			
+        traits = { 
+            army_infantry_2
+        }
+
+    }
+
 }
