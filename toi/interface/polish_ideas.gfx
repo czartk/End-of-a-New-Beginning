@@ -1,4 +1,7 @@
 spriteTypes = {	
+
+    ### IDEAS
+
 	spriteType = {
 		name = "GFX_idea_POL_Hussars"
 		texturefile = "gfx/interface/ideas/FRA_national_mobilization_focus.dds"
@@ -39,6 +42,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_build_infrastructure.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_POL_vic_Fortification_Effort_idea"
+		texturefile = "gfx/interface/ideas/idea_generic_fortify_the_borders.dds"
+	}
+
+	### ADVISORS
+
 	#spriteType = {
 	#	name = "GFX_idea_POL_Leopold_Kronenberg"
 	#	texturefile = "gfx/interface/ideas/POL/."
@@ -53,6 +63,36 @@ spriteTypes = {
 	#	name = "GFX_idea_POL_Andrzej_Zamoyski"
 	#	texturefile = "gfx/interface/ideas/POL/."
 	#}
+
+	spriteType = {
+		name = "GFX_idea_POL_vic_Franciszek_Rochebrune"
+		texturefile = "gfx/interface/ideas/POL/advisors/Franciszek_de_rochebrune.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_vic_Jozef_Hauke_Bosak"
+		texturefile = "gfx/interface/ideas/POL/advisors/jozef_hauke_bosak.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_vic_Kazimierz_Blaszczynski"
+		texturefile = "gfx/interface/ideas/POL/advisors/kazimierz_blaszczynski.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_POL_vic_Anna_Pustowojtowna"
+		texturefile = "gfx/interface/ideas/POL/advisors/anna_pustowojtowna.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_vic_Stanislaw_Brzoska"
+		texturefile = "gfx/interface/ideas/POL/advisors/stanislaw_brzozka.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_POL_vic_Zygmunt_Jordan"
+		texturefile = "gfx/interface/ideas/POL/advisors/zygmunt_jordan.dds"
+	}
 
 
 
